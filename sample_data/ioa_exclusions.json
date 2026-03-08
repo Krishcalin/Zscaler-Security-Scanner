@@ -1,0 +1,104 @@
+{
+  "resources": [
+    {
+      "name": "Allow-SCCM",
+      "enabled": true
+    },
+    {
+      "name": "Allow-Backup",
+      "enabled": true
+    },
+    {
+      "name": "Allow-AV-Compat",
+      "enabled": true
+    },
+    {
+      "name": "Allow-Dev-Tools",
+      "enabled": true
+    },
+    {
+      "name": "Old-Exception-1",
+      "enabled": false
+    },
+    {
+      "name": "Old-Exception-2",
+      "enabled": false
+    },
+    {
+      "name": "Old-Exception-3",
+      "enabled": false
+    },
+    {
+      "name": "Old-Exception-4",
+      "enabled": false
+    },
+    {
+      "name": "Old-Exception-5",
+      "enabled": false
+    },
+    {
+      "name": "Old-Exception-6",
+      "enabled": false
+    },
+    {
+      "name": "Exc-7",
+      "enabled": true
+    },
+    {
+      "name": "Exc-8",
+      "enabled": true
+    },
+    {
+      "name": "Exc-9",
+      "enabled": true
+    },
+    {
+      "name": "Exc-10",
+      "enabled": true
+    },
+    {
+      "name": "Exc-11",
+      "enabled": true
+    },
+    {
+      "name": "Exc-12",
+      "enabled": true
+    },
+    {
+      "name": "Exc-13",
+      "enabled": true
+    },
+    {
+      "name": "Exc-14",
+      "enabled": true
+    },
+    {
+      "name": "Exc-15",
+      "enabled": true
+    },
+    {
+      "name": "Exc-16",
+      "enabled": true
+    },
+    {
+      "name": "Exc-17",
+      "enabled": true
+    },
+    {
+      "name": "Exc-18",
+      "enabled": true
+    },
+    {
+      "name": "Exc-19",
+      "enabled": true
+    },
+    {
+      "name": "Exc-20",
+      "enabled": true
+    },
+    {
+      "name": "Exc-21",
+      "enabled": true
+    }
+  ]
+}

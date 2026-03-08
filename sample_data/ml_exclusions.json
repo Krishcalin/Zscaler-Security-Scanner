@@ -1,0 +1,36 @@
+{
+  "resources": [
+    {
+      "value": "C:\\Windows\\Temp\\*",
+      "applied_globally": true
+    },
+    {
+      "value": "C:\\Users\\*\\AppData\\Local\\Temp\\*",
+      "applied_globally": true
+    },
+    {
+      "value": "C:\\ProgramData\\CompanyApp\\*",
+      "groups": [
+        "HG-Workstations"
+      ]
+    },
+    {
+      "value": "*.ps1",
+      "applied_globally": true
+    },
+    {
+      "value": "D:\\Backups\\**",
+      "applied_globally": true
+    },
+    {
+      "value": "C:\\Tools\\powershell.exe",
+      "groups": [
+        "HG-DevTeam"
+      ]
+    },
+    {
+      "value": "C:\\Program Files\\LegacyApp\\*",
+      "applied_globally": true
+    }
+  ]
+}

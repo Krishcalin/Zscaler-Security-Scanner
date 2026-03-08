@@ -1,0 +1,114 @@
+{
+  "resources": [
+    {
+      "name": "Default-Policy",
+      "enabled": true,
+      "groups": [
+        "HG-Workstations"
+      ],
+      "prevention_settings": {
+        "cloudAntiMalware": {
+          "detection": "MODERATE",
+          "prevention": "MODERATE"
+        },
+        "sensorAntiMalware": {
+          "detection": "MODERATE",
+          "prevention": "DISABLED"
+        },
+        "adwarePUP": {
+          "detection": "MODERATE",
+          "prevention": "DISABLED"
+        },
+        "cloudMLSlider": "CAUTIOUS",
+        "onSensorMLSlider": "DISABLED",
+        "suspiciousProcesses": {
+          "detection": "MODERATE",
+          "prevention": "DISABLED"
+        },
+        "suspiciousRegistryOperations": {
+          "detection": "MODERATE",
+          "prevention": "DISABLED"
+        },
+        "suspiciousScriptsAndCommands": {
+          "detection": "MODERATE",
+          "prevention": "DISABLED"
+        },
+        "intelligenceSourcedThreats": {
+          "detection": "AGGRESSIVE",
+          "prevention": "MODERATE"
+        },
+        "suspiciousKernelDrivers": {
+          "detection": "MODERATE",
+          "prevention": "DISABLED"
+        },
+        "interpreterProtection": "DISABLED",
+        "forceASLR": "DISABLED",
+        "forceDEP": "DISABLED",
+        "heapSprayPreallocation": "DISABLED",
+        "nullPageAllocation": "DISABLED",
+        "SEHOverwriteProtection": "DISABLED",
+        "ransomware": {
+          "detection": "AGGRESSIVE",
+          "prevention": "DISABLED"
+        },
+        "scriptBasedExecutionMonitoring": "DISABLED"
+      }
+    },
+    {
+      "name": "Server-Policy",
+      "enabled": true,
+      "groups": [],
+      "prevention_settings": {
+        "cloudAntiMalware": {
+          "detection": "MODERATE",
+          "prevention": "MODERATE"
+        },
+        "sensorAntiMalware": {
+          "detection": "MODERATE",
+          "prevention": "MODERATE"
+        },
+        "cloudMLSlider": "MODERATE",
+        "onSensorMLSlider": "MODERATE",
+        "suspiciousProcesses": {
+          "detection": "AGGRESSIVE",
+          "prevention": "MODERATE"
+        },
+        "suspiciousScriptsAndCommands": {
+          "detection": "AGGRESSIVE",
+          "prevention": "MODERATE"
+        },
+        "ransomware": {
+          "detection": "AGGRESSIVE",
+          "prevention": "AGGRESSIVE"
+        }
+      }
+    },
+    {
+      "name": "VIP-Policy",
+      "enabled": true,
+      "groups": [
+        "HG-Executives"
+      ],
+      "prevention_settings": {
+        "cloudAntiMalware": {
+          "detection": "AGGRESSIVE",
+          "prevention": "AGGRESSIVE"
+        },
+        "sensorAntiMalware": {
+          "detection": "AGGRESSIVE",
+          "prevention": "AGGRESSIVE"
+        },
+        "cloudMLSlider": "AGGRESSIVE",
+        "onSensorMLSlider": "AGGRESSIVE",
+        "suspiciousProcesses": {
+          "detection": "AGGRESSIVE",
+          "prevention": "AGGRESSIVE"
+        },
+        "ransomware": {
+          "detection": "AGGRESSIVE",
+          "prevention": "AGGRESSIVE"
+        }
+      }
+    }
+  ]
+}

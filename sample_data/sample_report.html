@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zscaler SASE — Security Assessment Report</title>
+<title>CrowdStrike Falcon — Security Assessment Report</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
 
@@ -16,7 +16,7 @@
     --text-primary: #e2e8f0;
     --text-secondary: #94a3b8;
     --text-muted: #64748b;
-    --accent: #0ea5e9;
+    --accent: #e8272c;
     --accent-dim: rgba(56, 189, 248, 0.1);
     --critical: #ef4444;
     --critical-bg: rgba(239, 68, 68, 0.08);
@@ -26,7 +26,7 @@
     --medium-bg: rgba(234, 179, 8, 0.08);
     --low: #22c55e;
     --low-bg: rgba(34, 197, 94, 0.08);
-    --info-c: #0ea5e9;
+    --info-c: #e8272c;
     --info-bg: rgba(56, 189, 248, 0.08);
     --font-sans: 'DM Sans', -apple-system, sans-serif;
     --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
@@ -505,13 +505,13 @@
 
   <div class="header">
     <div class="header-left">
-      <h1>&#x1f6e1; Zscaler SASE</h1>
+      <h1>&#x1f6e1; CrowdStrike Falcon</h1>
       <div class="subtitle">Security Assessment Report</div>
     </div>
     <div class="header-right">
-      <span>Scan: 2026-03-08T05:43:30</span>
+      <span>Scan: 2026-03-08T07:27:04</span>
       <span>Source: sample_data</span>
-      <span>Modules: zia-url, zia-ssl, zia-fw, zia-threat, zia-dlp, zia-app, zpa-policy, zpa-app, admin, auth, dspm, audit</span>
+      <span>Modules: prevention, updates, response, device, exclusions, sensors, admin, ioas, firewall, mitre</span>
     </div>
   </div>
 
@@ -535,19 +535,19 @@
 
     <div class="severity-grid">
       <div class="sev-card critical">
-        <div class="sev-count">2</div>
+        <div class="sev-count">6</div>
         <div class="sev-label">Critical</div>
       </div>
       <div class="sev-card high">
-        <div class="sev-count">23</div>
+        <div class="sev-count">16</div>
         <div class="sev-label">High</div>
       </div>
       <div class="sev-card medium">
-        <div class="sev-count">21</div>
+        <div class="sev-count">11</div>
         <div class="sev-label">Medium</div>
       </div>
       <div class="sev-card low">
-        <div class="sev-count">1</div>
+        <div class="sev-count">3</div>
         <div class="sev-label">Low</div>
       </div>
     </div>
@@ -559,75 +559,57 @@
     <div class="cat-bars">
       
       <div class="cat-bar-row">
-        <div class="cat-bar-label">ZIA URL Filtering</div>
+        <div class="cat-bar-label">Prevention Policy</div>
         <div class="cat-bar-track"><div class="cat-bar-fill" style="width: 100.0%"></div></div>
-        <div class="cat-bar-count">5</div>
+        <div class="cat-bar-count">15</div>
       </div>
 
       <div class="cat-bar-row">
-        <div class="cat-bar-label">ZPA Access Policy</div>
-        <div class="cat-bar-track"><div class="cat-bar-fill" style="width: 100.0%"></div></div>
-        <div class="cat-bar-count">5</div>
-      </div>
-
-      <div class="cat-bar-row">
-        <div class="cat-bar-label">ZPA Application Security</div>
-        <div class="cat-bar-track"><div class="cat-bar-fill" style="width: 100.0%"></div></div>
-        <div class="cat-bar-count">5</div>
-      </div>
-
-      <div class="cat-bar-row">
-        <div class="cat-bar-label">Admin &amp; Platform Security</div>
-        <div class="cat-bar-track"><div class="cat-bar-fill" style="width: 100.0%"></div></div>
-        <div class="cat-bar-count">5</div>
-      </div>
-
-      <div class="cat-bar-row">
-        <div class="cat-bar-label">DSPM</div>
-        <div class="cat-bar-track"><div class="cat-bar-fill" style="width: 100.0%"></div></div>
-        <div class="cat-bar-count">5</div>
-      </div>
-
-      <div class="cat-bar-row">
-        <div class="cat-bar-label">ZIA SSL Inspection</div>
-        <div class="cat-bar-track"><div class="cat-bar-fill" style="width: 80.0%"></div></div>
-        <div class="cat-bar-count">4</div>
-      </div>
-
-      <div class="cat-bar-row">
-        <div class="cat-bar-label">Audit &amp; Compliance</div>
-        <div class="cat-bar-track"><div class="cat-bar-fill" style="width: 80.0%"></div></div>
-        <div class="cat-bar-count">4</div>
-      </div>
-
-      <div class="cat-bar-row">
-        <div class="cat-bar-label">ZIA Cloud Firewall</div>
-        <div class="cat-bar-track"><div class="cat-bar-fill" style="width: 60.0%"></div></div>
-        <div class="cat-bar-count">3</div>
-      </div>
-
-      <div class="cat-bar-row">
-        <div class="cat-bar-label">DLP &amp; Data Protection</div>
-        <div class="cat-bar-track"><div class="cat-bar-fill" style="width: 60.0%"></div></div>
-        <div class="cat-bar-count">3</div>
-      </div>
-
-      <div class="cat-bar-row">
-        <div class="cat-bar-label">Cloud App Control</div>
-        <div class="cat-bar-track"><div class="cat-bar-fill" style="width: 60.0%"></div></div>
-        <div class="cat-bar-count">3</div>
-      </div>
-
-      <div class="cat-bar-row">
-        <div class="cat-bar-label">Authentication &amp; IdP</div>
-        <div class="cat-bar-track"><div class="cat-bar-fill" style="width: 60.0%"></div></div>
-        <div class="cat-bar-count">3</div>
-      </div>
-
-      <div class="cat-bar-row">
-        <div class="cat-bar-label">ZIA Threat Prevention</div>
+        <div class="cat-bar-label">Exclusion Audit</div>
         <div class="cat-bar-track"><div class="cat-bar-fill" style="width: 40.0%"></div></div>
-        <div class="cat-bar-count">2</div>
+        <div class="cat-bar-count">6</div>
+      </div>
+
+      <div class="cat-bar-row">
+        <div class="cat-bar-label">Sensor Health</div>
+        <div class="cat-bar-track"><div class="cat-bar-fill" style="width: 26.666666666666668%"></div></div>
+        <div class="cat-bar-count">4</div>
+      </div>
+
+      <div class="cat-bar-row">
+        <div class="cat-bar-label">Admin Security</div>
+        <div class="cat-bar-track"><div class="cat-bar-fill" style="width: 26.666666666666668%"></div></div>
+        <div class="cat-bar-count">4</div>
+      </div>
+
+      <div class="cat-bar-row">
+        <div class="cat-bar-label">Sensor Updates</div>
+        <div class="cat-bar-track"><div class="cat-bar-fill" style="width: 20.0%"></div></div>
+        <div class="cat-bar-count">3</div>
+      </div>
+
+      <div class="cat-bar-row">
+        <div class="cat-bar-label">Response Policy</div>
+        <div class="cat-bar-track"><div class="cat-bar-fill" style="width: 6.666666666666667%"></div></div>
+        <div class="cat-bar-count">1</div>
+      </div>
+
+      <div class="cat-bar-row">
+        <div class="cat-bar-label">Device Control</div>
+        <div class="cat-bar-track"><div class="cat-bar-fill" style="width: 6.666666666666667%"></div></div>
+        <div class="cat-bar-count">1</div>
+      </div>
+
+      <div class="cat-bar-row">
+        <div class="cat-bar-label">Custom IOAs</div>
+        <div class="cat-bar-track"><div class="cat-bar-fill" style="width: 6.666666666666667%"></div></div>
+        <div class="cat-bar-count">1</div>
+      </div>
+
+      <div class="cat-bar-row">
+        <div class="cat-bar-label">MITRE Coverage</div>
+        <div class="cat-bar-track"><div class="cat-bar-fill" style="width: 6.666666666666667%"></div></div>
+        <div class="cat-bar-count">1</div>
       </div>
     </div>
   </div>
@@ -635,1322 +617,1088 @@
   <!-- Filter Bar -->
   <div class="filter-bar">
     <label>Filter:</label>
-    <button class="filter-btn active" onclick="filterFindings('ALL')">All (47)</button>
-    <button class="filter-btn" onclick="filterFindings('CRITICAL')">Critical (2)</button>
-    <button class="filter-btn" onclick="filterFindings('HIGH')">High (23)</button>
-    <button class="filter-btn" onclick="filterFindings('MEDIUM')">Medium (21)</button>
-    <button class="filter-btn" onclick="filterFindings('LOW')">Low (1)</button>
+    <button class="filter-btn active" onclick="filterFindings('ALL')">All (36)</button>
+    <button class="filter-btn" onclick="filterFindings('CRITICAL')">Critical (6)</button>
+    <button class="filter-btn" onclick="filterFindings('HIGH')">High (16)</button>
+    <button class="filter-btn" onclick="filterFindings('MEDIUM')">Medium (11)</button>
+    <button class="filter-btn" onclick="filterFindings('LOW')">Low (3)</button>
   </div>
 
   <!-- Findings -->
   <div class="findings-section">
-    <h2>Detailed Findings (47)</h2>
+    <h2>Detailed Findings (36)</h2>
     
-    <div class="finding-card" data-severity="CRITICAL" data-category="ZIA URL Filtering">
+    <div class="finding-card" data-severity="CRITICAL" data-category="Prevention Policy">
       <div class="finding-header">
         <span class="sev-badge CRITICAL">CRITICAL</span>
-        <span class="finding-title">High-risk URL categories not blocked (1)</span>
-        <span class="finding-id">ZIA-URL-002</span>
+        <span class="finding-title">Hosts without prevention policy (2)</span>
+        <span class="finding-id">PREV-008</span>
         <span class="finding-chevron">&#9654;</span>
       </div>
       <div class="finding-body">
         <div class="finding-section">
           <div class="finding-section-title">Description</div>
-          <p>High-risk categories are allowed instead of blocked.</p>
+          <p>Hosts with sensor but NO prevention policy = unprotected.</p>
+        </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Affected Items (2)</div>
+                  <ul class="affected-list"><li>SRV-002</li><li>UNMANAGED-1</li></ul>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Remediation</div>
+                  <div class="remediation-text">Assign prevention policy to all host groups.</div>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">References</div>
+                  <ul class="ref-list"><li>CrowdStrike — Policy Coverage</li></ul>
+                </div>
+      </div>
+    </div>
+
+    <div class="finding-card" data-severity="CRITICAL" data-category="Prevention Policy">
+      <div class="finding-header">
+        <span class="sev-badge CRITICAL">CRITICAL</span>
+        <span class="finding-title">Ransomware prevention not enabled in &#x27;Default-Policy&#x27;</span>
+        <span class="finding-id">PREV-009</span>
+        <span class="finding-chevron">&#9654;</span>
+      </div>
+      <div class="finding-body">
+        <div class="finding-section">
+          <div class="finding-section-title">Description</div>
+          <p>Ransomware protection is disabled or detect-only.</p>
         </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">Affected Items (1)</div>
-                  <ul class="affected-list"><li>Rule &#x27;Allow-Newly-Registered&#x27;: allows Newly Registered Domains</li></ul>
+                  <ul class="affected-list"><li>Policy: Default-Policy, ransomware: DISABLED</li></ul>
                 </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Block all high-risk URL categories: Malware, Phishing, C2, Cryptomining, Botnet.</div>
+                  <div class="remediation-text">Enable ransomware prevention in BLOCK mode.</div>
                 </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler Recommended Baseline — URL Categories</li></ul>
+                  <ul class="ref-list"><li>CrowdStrike — Ransomware Protection</li></ul>
                 </div>
       </div>
     </div>
 
-    <div class="finding-card" data-severity="CRITICAL" data-category="Admin &amp; Platform Security">
+    <div class="finding-card" data-severity="CRITICAL" data-category="Exclusion Audit">
       <div class="finding-header">
         <span class="sev-badge CRITICAL">CRITICAL</span>
-        <span class="finding-title">Admin MFA not enforced</span>
-        <span class="finding-id">ADM-003</span>
+        <span class="finding-title">Dangerous ML exclusion paths (10)</span>
+        <span class="finding-id">EXC-001</span>
         <span class="finding-chevron">&#9654;</span>
       </div>
       <div class="finding-body">
         <div class="finding-section">
           <div class="finding-section-title">Description</div>
-          <p>Admin portal access without MFA.</p>
-        </div>
-        
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Enforce MFA for all admin accounts via IDP.</div>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler — Admin Authentication Security</li></ul>
-                </div>
-      </div>
-    </div>
-
-    <div class="finding-card" data-severity="HIGH" data-category="ZIA URL Filtering">
-      <div class="finding-header">
-        <span class="sev-badge HIGH">HIGH</span>
-        <span class="finding-title">Uncategorized URLs allowed</span>
-        <span class="finding-id">ZIA-URL-003</span>
-        <span class="finding-chevron">&#9654;</span>
-      </div>
-      <div class="finding-body">
-        <div class="finding-section">
-          <div class="finding-section-title">Description</div>
-          <p>Uncategorized URLs should be cautioned, not allowed.</p>
-        </div>
-        
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Set Uncategorized URLs to CAUTION action.</div>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler Baseline — Caution Uncategorized</li></ul>
-                </div>
-      </div>
-    </div>
-
-    <div class="finding-card" data-severity="HIGH" data-category="ZIA URL Filtering">
-      <div class="finding-header">
-        <span class="sev-badge HIGH">HIGH</span>
-        <span class="finding-title">Default URL rule allows all categories</span>
-        <span class="finding-id">ZIA-URL-006</span>
-        <span class="finding-chevron">&#9654;</span>
-      </div>
-      <div class="finding-body">
-        <div class="finding-section">
-          <div class="finding-section-title">Description</div>
-          <p>The default/last URL rule allows all categories.</p>
-        </div>
-        
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Set default rule to CAUTION or BLOCK.</div>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler Baseline — Default Deny</li></ul>
-                </div>
-      </div>
-    </div>
-
-    <div class="finding-card" data-severity="HIGH" data-category="ZIA SSL Inspection">
-      <div class="finding-header">
-        <span class="sev-badge HIGH">HIGH</span>
-        <span class="finding-title">SSL inspection bypass rules (6)</span>
-        <span class="finding-id">ZIA-SSL-002</span>
-        <span class="finding-chevron">&#9654;</span>
-      </div>
-      <div class="finding-body">
-        <div class="finding-section">
-          <div class="finding-section-title">Description</div>
-          <p>SSL bypass rules allow encrypted traffic uninspected.</p>
+          <p>ML exclusions on attacker-abused paths — malware won&#x27;t be detected.</p>
         </div>
         
                 <div class="finding-section">
-                  <div class="finding-section-title">Affected Items (6)</div>
-                  <ul class="affected-list"><li>Rule &#x27;Bypass-Banking&#x27;: bypasses SSL for [&#x27;Finance&#x27;, &#x27;Banking&#x27;]</li><li>Rule &#x27;Bypass-Health&#x27;: bypasses SSL for [&#x27;Health&#x27;]</li><li>Rule &#x27;Bypass-Personal&#x27;: bypasses SSL for [&#x27;Personal Sites&#x27;, &#x27;Streaming&#x27;]</li><li>Rule &#x27;Bypass-Social&#x27;: bypasses SSL for [&#x27;Social Media&#x27;]</li><li>Rule &#x27;Bypass-Webmail&#x27;: bypasses SSL for [&#x27;Webmail&#x27;]</li><li>Rule &#x27;Bypass-Misc&#x27;: bypasses SSL for [&#x27;Shopping&#x27;, &#x27;Travel&#x27;]</li></ul>
+                  <div class="finding-section-title">Affected Items (10)</div>
+                  <ul class="affected-list"><li>C:\Windows\Temp\* — scope: ALL hosts</li><li>C:\Windows\Temp\* — scope: ALL hosts</li><li>C:\Users\*\AppData\Local\Temp\* — scope: ALL hosts</li><li>C:\Users\*\AppData\Local\Temp\* — scope: ALL hosts</li><li>C:\ProgramData\CompanyApp\* — scope: 1 group(s)</li><li>C:\ProgramData\CompanyApp\* — scope: 1 group(s)</li><li>*.ps1 (executable extension exclusion)</li><li>D:\Backups\** — scope: ALL hosts</li><li>C:\Tools\powershell.exe — scope: 1 group(s)</li><li>C:\Program Files\LegacyApp\* — scope: ALL hosts</li></ul>
                 </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Minimize SSL bypass rules. Only exempt certificate-pinned apps.</div>
+                  <div class="remediation-text">Remove broad path exclusions. Use process+path combination instead. Never exclude temp folders, user profiles, or entire drives.</div>
                 </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler SSL Leading Practices — Minimize Bypasses</li></ul>
+                  <ul class="ref-list"><li>CrowdStrike — Exclusion Best Practices</li></ul>
                 </div>
       </div>
     </div>
 
-    <div class="finding-card" data-severity="HIGH" data-category="ZIA SSL Inspection">
+    <div class="finding-card" data-severity="CRITICAL" data-category="Exclusion Audit">
       <div class="finding-header">
-        <span class="sev-badge HIGH">HIGH</span>
-        <span class="finding-title">Minimum TLS version too low (tls1.1)</span>
-        <span class="finding-id">ZIA-SSL-004</span>
+        <span class="sev-badge CRITICAL">CRITICAL</span>
+        <span class="finding-title">Sensor Visibility exclusions on dangerous paths (3)</span>
+        <span class="finding-id">EXC-004</span>
         <span class="finding-chevron">&#9654;</span>
       </div>
       <div class="finding-body">
         <div class="finding-section">
           <div class="finding-section-title">Description</div>
-          <p>Min TLS: tls1.1. TLS 1.0/1.1 have vulnerabilities.</p>
-        </div>
-        
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Set minimum TLS 1.2.</div>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>NIST SP 800-52 Rev 2</li></ul>
-                </div>
-      </div>
-    </div>
-
-    <div class="finding-card" data-severity="HIGH" data-category="ZIA SSL Inspection">
-      <div class="finding-header">
-        <span class="sev-badge HIGH">HIGH</span>
-        <span class="finding-title">SSL inspection disabled for Client Connector</span>
-        <span class="finding-id">ZIA-SSL-005</span>
-        <span class="finding-chevron">&#9654;</span>
-      </div>
-      <div class="finding-body">
-        <div class="finding-section">
-          <div class="finding-section-title">Description</div>
-          <p>SSL not inspected for Zscaler Client Connector traffic.</p>
-        </div>
-        
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Enable SSL inspection for Client Connector sessions.</div>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler SSL Inspection — Client Connector</li></ul>
-                </div>
-      </div>
-    </div>
-
-    <div class="finding-card" data-severity="HIGH" data-category="ZIA Cloud Firewall">
-      <div class="finding-header">
-        <span class="sev-badge HIGH">HIGH</span>
-        <span class="finding-title">Firewall default rule is not deny/block</span>
-        <span class="finding-id">ZIA-FW-002</span>
-        <span class="finding-chevron">&#9654;</span>
-      </div>
-      <div class="finding-body">
-        <div class="finding-section">
-          <div class="finding-section-title">Description</div>
-          <p>Default rule action: ALLOW, expected: Block.</p>
-        </div>
-        
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Set default firewall rule to Block (deny all).</div>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler Baseline — Default Deny</li></ul>
-                </div>
-      </div>
-    </div>
-
-    <div class="finding-card" data-severity="HIGH" data-category="ZIA Threat Prevention">
-      <div class="finding-header">
-        <span class="sev-badge HIGH">HIGH</span>
-        <span class="finding-title">Cloud Sandbox disabled</span>
-        <span class="finding-id">ZIA-THREAT-002</span>
-        <span class="finding-chevron">&#9654;</span>
-      </div>
-      <div class="finding-body">
-        <div class="finding-section">
-          <div class="finding-section-title">Description</div>
-          <p>Sandbox analysis is disabled.</p>
-        </div>
-        
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Enable Cloud Sandbox.</div>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler — Sandbox Policy</li></ul>
-                </div>
-      </div>
-    </div>
-
-    <div class="finding-card" data-severity="HIGH" data-category="DLP &amp; Data Protection">
-      <div class="finding-header">
-        <span class="sev-badge HIGH">HIGH</span>
-        <span class="finding-title">All DLP rules in monitor-only mode</span>
-        <span class="finding-id">ZIA-DLP-004</span>
-        <span class="finding-chevron">&#9654;</span>
-      </div>
-      <div class="finding-body">
-        <div class="finding-section">
-          <div class="finding-section-title">Description</div>
-          <p>No DLP rules actively blocking data exfiltration.</p>
-        </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Affected Items (2)</div>
-                  <ul class="affected-list"><li>Monitor-SSN</li><li>Monitor-CC</li></ul>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Set critical DLP rules to BLOCK action.</div>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler DLP — Enforcement Mode</li></ul>
-                </div>
-      </div>
-    </div>
-
-    <div class="finding-card" data-severity="HIGH" data-category="Cloud App Control">
-      <div class="finding-header">
-        <span class="sev-badge HIGH">HIGH</span>
-        <span class="finding-title">Risky applications allowed (3)</span>
-        <span class="finding-id">ZIA-APP-002</span>
-        <span class="finding-chevron">&#9654;</span>
-      </div>
-      <div class="finding-body">
-        <div class="finding-section">
-          <div class="finding-section-title">Description</div>
-          <p>High-risk apps (torrents, VPN bypass, remote access) allowed.</p>
+          <p>SV exclusions stop the sensor from collecting ANY telemetry — complete blind spot.</p>
         </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">Affected Items (3)</div>
-                  <ul class="affected-list"><li>Rule &#x27;Allow-Risky&#x27;: allows BitTorrent</li><li>Rule &#x27;Allow-Risky&#x27;: allows Mega</li><li>Rule &#x27;Allow-Risky&#x27;: allows TeamViewer</li></ul>
+                  <ul class="affected-list"><li>C:\Windows\Temp\* — scope: ALL hosts</li><li>C:\Windows\Temp\* — scope: ALL hosts</li><li>/tmp/* — scope: ALL hosts</li></ul>
                 </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Block BitTorrent, Tor, anonymous proxies, unauthorized remote access.</div>
+                  <div class="remediation-text">SV exclusions should be extremely rare. Remove unless causing proven performance issues.</div>
                 </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler Baseline — Risk Index Apps</li></ul>
+                  <ul class="ref-list"><li>CrowdStrike — Sensor Visibility vs ML Exclusions</li></ul>
                 </div>
       </div>
     </div>
 
-    <div class="finding-card" data-severity="HIGH" data-category="ZPA Access Policy">
+    <div class="finding-card" data-severity="CRITICAL" data-category="Exclusion Audit">
       <div class="finding-header">
-        <span class="sev-badge HIGH">HIGH</span>
-        <span class="finding-title">Overly permissive ZPA access rules (2)</span>
-        <span class="finding-id">ZPA-POL-002</span>
+        <span class="sev-badge CRITICAL">CRITICAL</span>
+        <span class="finding-title">Exclusions for commonly abused processes (2)</span>
+        <span class="finding-id">EXC-007</span>
         <span class="finding-chevron">&#9654;</span>
       </div>
       <div class="finding-body">
         <div class="finding-section">
           <div class="finding-section-title">Description</div>
-          <p>Access rules grant broad access — violates least privilege.</p>
+          <p>Processes excluded that attackers routinely abuse (LOLBins).</p>
         </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">Affected Items (2)</div>
-                  <ul class="affected-list"><li>Rule &#x27;Allow-All-Apps&#x27;: allows access to ALL app segments</li><li>Rule &#x27;Default-Allow&#x27;: allows access to ALL app segments</li></ul>
+                  <ul class="affected-list"><li>C:\Tools\powershell.exe: excludes powershell.exe</li><li>C:\Tools\powershell.exe: excludes sh</li></ul>
                 </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Restrict access rules to specific SCIM groups and app segments.</div>
+                  <div class="remediation-text">NEVER exclude PowerShell, cmd, wscript, mshta, certutil, etc.</div>
                 </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler ZPA — Least Privilege</li><li>Zero Trust Segmentation</li></ul>
+                  <ul class="ref-list"><li>MITRE ATT&amp;CK — LOLBins</li><li>CrowdStrike — Dangerous Exclusions</li></ul>
                 </div>
       </div>
     </div>
 
-    <div class="finding-card" data-severity="HIGH" data-category="ZPA Access Policy">
+    <div class="finding-card" data-severity="CRITICAL" data-category="Sensor Health">
       <div class="finding-header">
-        <span class="sev-badge HIGH">HIGH</span>
-        <span class="finding-title">Access rules without device posture check (3)</span>
-        <span class="finding-id">ZPA-POL-003</span>
+        <span class="sev-badge CRITICAL">CRITICAL</span>
+        <span class="finding-title">Hosts in Reduced Functionality Mode (1)</span>
+        <span class="finding-id">SENSOR-002</span>
         <span class="finding-chevron">&#9654;</span>
       </div>
       <div class="finding-body">
         <div class="finding-section">
           <div class="finding-section-title">Description</div>
-          <p>Access rules don&#x27;t verify device compliance (OS patches, AV, disk encryption).</p>
+          <p>RFM sensors have severely limited detection — nearly unprotected.</p>
+        </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Affected Items (1)</div>
+                  <ul class="affected-list"><li>SRV-002</li></ul>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Remediation</div>
+                  <div class="remediation-text">RFM usually indicates kernel incompatibility. Update sensor or OS kernel.</div>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">References</div>
+                  <ul class="ref-list"><li>CrowdStrike — RFM Troubleshooting</li></ul>
+                </div>
+      </div>
+    </div>
+
+    <div class="finding-card" data-severity="HIGH" data-category="Prevention Policy">
+      <div class="finding-header">
+        <span class="sev-badge HIGH">HIGH</span>
+        <span class="finding-title">NGAV settings disabled in &#x27;Default-Policy&#x27; (3)</span>
+        <span class="finding-id">PREV-002</span>
+        <span class="finding-chevron">&#9654;</span>
+      </div>
+      <div class="finding-body">
+        <div class="finding-section">
+          <div class="finding-section-title">Description</div>
+          <p>Policy &#x27;Default-Policy&#x27; has critical NGAV settings disabled.</p>
         </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">Affected Items (3)</div>
-                  <ul class="affected-list"><li>Allow-All-Apps</li><li>Allow-Engineering</li><li>Default-Allow</li></ul>
+                  <ul class="affected-list"><li>Sensor Anti-Malware: DISABLED — Offline ML protection</li><li>Adware &amp; PUP: DISABLED — Potentially unwanted programs</li><li>On-Sensor ML Level: DISABLED — Sensor-based ML aggressiveness</li></ul>
                 </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Add device posture profiles to all critical access rules.</div>
+                  <div class="remediation-text">Enable Cloud Anti-Malware, Sensor Anti-Malware, and Adware/PUP detection.</div>
                 </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler ZPA — Adaptive Access Policy</li><li>Device Posture Best Practices</li></ul>
+                  <ul class="ref-list"><li>CrowdStrike — Recommended Prevention Settings</li></ul>
                 </div>
       </div>
     </div>
 
-    <div class="finding-card" data-severity="HIGH" data-category="ZPA Access Policy">
+    <div class="finding-card" data-severity="HIGH" data-category="Prevention Policy">
       <div class="finding-header">
         <span class="sev-badge HIGH">HIGH</span>
-        <span class="finding-title">ZPA default access rule is not deny</span>
-        <span class="finding-id">ZPA-POL-005</span>
+        <span class="finding-title">NGAV settings disabled in &#x27;Server-Policy&#x27; (1)</span>
+        <span class="finding-id">PREV-002</span>
         <span class="finding-chevron">&#9654;</span>
       </div>
       <div class="finding-body">
         <div class="finding-section">
           <div class="finding-section-title">Description</div>
-          <p>Default rule: ALLOW (should be DENY).</p>
-        </div>
-        
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Ensure default ZPA rule is DENY (zero trust).</div>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zero Trust — Default Deny</li></ul>
-                </div>
-      </div>
-    </div>
-
-    <div class="finding-card" data-severity="HIGH" data-category="ZPA Application Security">
-      <div class="finding-header">
-        <span class="sev-badge HIGH">HIGH</span>
-        <span class="finding-title">Wildcard application segments (2)</span>
-        <span class="finding-id">ZPA-APP-001</span>
-        <span class="finding-chevron">&#9654;</span>
-      </div>
-      <div class="finding-body">
-        <div class="finding-section">
-          <div class="finding-section-title">Description</div>
-          <p>Wildcard segments expose more than intended.</p>
+          <p>Policy &#x27;Server-Policy&#x27; has critical NGAV settings disabled.</p>
         </div>
         
                 <div class="finding-section">
-                  <div class="finding-section-title">Affected Items (2)</div>
-                  <ul class="affected-list"><li>Segment &#x27;Internal-Wildcard&#x27;: *.internal.corp.com</li><li>Segment &#x27;Internal-Wildcard&#x27;: *.dev.corp.com</li></ul>
+                  <div class="finding-section-title">Affected Items (1)</div>
+                  <ul class="affected-list"><li>Adware &amp; PUP: not set — Potentially unwanted programs</li></ul>
                 </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Replace wildcards with explicit FQDNs. Use app discovery to identify actual apps.</div>
+                  <div class="remediation-text">Enable Cloud Anti-Malware, Sensor Anti-Malware, and Adware/PUP detection.</div>
                 </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler ZPA — Application Segmentation Best Practices</li></ul>
+                  <ul class="ref-list"><li>CrowdStrike — Recommended Prevention Settings</li></ul>
                 </div>
       </div>
     </div>
 
-    <div class="finding-card" data-severity="HIGH" data-category="ZPA Application Security">
+    <div class="finding-card" data-severity="HIGH" data-category="Prevention Policy">
       <div class="finding-header">
         <span class="sev-badge HIGH">HIGH</span>
-        <span class="finding-title">Unhealthy App Connectors (2)</span>
-        <span class="finding-id">ZPA-APP-002</span>
+        <span class="finding-title">NGAV settings disabled in &#x27;VIP-Policy&#x27; (1)</span>
+        <span class="finding-id">PREV-002</span>
         <span class="finding-chevron">&#9654;</span>
       </div>
       <div class="finding-body">
         <div class="finding-section">
           <div class="finding-section-title">Description</div>
-          <p>App Connectors not in healthy state.</p>
+          <p>Policy &#x27;VIP-Policy&#x27; has critical NGAV settings disabled.</p>
         </div>
         
                 <div class="finding-section">
-                  <div class="finding-section-title">Affected Items (2)</div>
-                  <ul class="affected-list"><li>DC2-Connector-1: DISCONNECTED</li><li>Legacy-Connector: WARNING</li></ul>
+                  <div class="finding-section-title">Affected Items (1)</div>
+                  <ul class="affected-list"><li>Adware &amp; PUP: not set — Potentially unwanted programs</li></ul>
                 </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Investigate and restore unhealthy connectors.</div>
+                  <div class="remediation-text">Enable Cloud Anti-Malware, Sensor Anti-Malware, and Adware/PUP detection.</div>
                 </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler ZPA — App Connector Troubleshooting</li></ul>
+                  <ul class="ref-list"><li>CrowdStrike — Recommended Prevention Settings</li></ul>
                 </div>
       </div>
     </div>
 
-    <div class="finding-card" data-severity="HIGH" data-category="Admin &amp; Platform Security">
+    <div class="finding-card" data-severity="HIGH" data-category="Prevention Policy">
       <div class="finding-header">
         <span class="sev-badge HIGH">HIGH</span>
-        <span class="finding-title">Dormant admin accounts (2)</span>
-        <span class="finding-id">ADM-001</span>
+        <span class="finding-title">Behavioral prevention gaps in &#x27;Default-Policy&#x27; (5)</span>
+        <span class="finding-id">PREV-003</span>
         <span class="finding-chevron">&#9654;</span>
       </div>
       <div class="finding-body">
         <div class="finding-section">
           <div class="finding-section-title">Description</div>
-          <p>Admin accounts inactive &gt;90 days.</p>
-        </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Affected Items (2)</div>
-                  <ul class="affected-list"><li>admin4@corp.com: last login 2025-10-15</li><li>old-admin@corp.com: last login 2025-01-20</li></ul>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Deactivate dormant admin accounts. Review admin access quarterly.</div>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler — Admin Account Best Practices</li></ul>
-                </div>
-      </div>
-    </div>
-
-    <div class="finding-card" data-severity="HIGH" data-category="Admin &amp; Platform Security">
-      <div class="finding-header">
-        <span class="sev-badge HIGH">HIGH</span>
-        <span class="finding-title">Excessive super admin accounts (5)</span>
-        <span class="finding-id">ADM-002</span>
-        <span class="finding-chevron">&#9654;</span>
-      </div>
-      <div class="finding-body">
-        <div class="finding-section">
-          <div class="finding-section-title">Description</div>
-          <p>5 super admin accounts.</p>
+          <p>Behavioral IOA settings disabled — exploits and scripts may not be blocked.</p>
         </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">Affected Items (5)</div>
-                  <ul class="affected-list"><li>superadmin@corp.com</li><li>admin2@corp.com</li><li>admin3@corp.com</li><li>admin4@corp.com</li><li>old-admin@corp.com</li></ul>
+                  <ul class="affected-list"><li>Suspicious Processes: DISABLED</li><li>Suspicious Registry Ops: DISABLED</li><li>Suspicious Scripts: DISABLED</li><li>Suspicious Kernel Drivers: DISABLED</li><li>Interpreter Protection: DISABLED</li></ul>
                 </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Limit super admins. Use role-based admin profiles.</div>
+                  <div class="remediation-text">Enable: Suspicious Processes, Registry Ops, Scripts, Intel Threats, Kernel Drivers.</div>
                 </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler — Role-Based Administration</li></ul>
+                  <ul class="ref-list"><li>CrowdStrike — Behavior-Based Prevention</li></ul>
                 </div>
       </div>
     </div>
 
-    <div class="finding-card" data-severity="HIGH" data-category="Authentication &amp; IdP">
+    <div class="finding-card" data-severity="HIGH" data-category="Prevention Policy">
       <div class="finding-header">
         <span class="sev-badge HIGH">HIGH</span>
-        <span class="finding-title">SCIM provisioning not enabled</span>
-        <span class="finding-id">AUTH-002</span>
+        <span class="finding-title">Behavioral prevention gaps in &#x27;Server-Policy&#x27; (4)</span>
+        <span class="finding-id">PREV-003</span>
         <span class="finding-chevron">&#9654;</span>
       </div>
       <div class="finding-body">
         <div class="finding-section">
           <div class="finding-section-title">Description</div>
-          <p>User/group attributes not synced in real-time via SCIM.</p>
+          <p>Behavioral IOA settings disabled — exploits and scripts may not be blocked.</p>
         </div>
         
+                <div class="finding-section">
+                  <div class="finding-section-title">Affected Items (4)</div>
+                  <ul class="affected-list"><li>Suspicious Registry Ops: not set</li><li>Intelligence-Sourced Threats: not set</li><li>Suspicious Kernel Drivers: not set</li><li>Interpreter Protection: not set</li></ul>
+                </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Enable SCIM for real-time user/group sync from IdP.</div>
+                  <div class="remediation-text">Enable: Suspicious Processes, Registry Ops, Scripts, Intel Threats, Kernel Drivers.</div>
                 </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler — SCIM Provisioning Best Practices</li></ul>
+                  <ul class="ref-list"><li>CrowdStrike — Behavior-Based Prevention</li></ul>
                 </div>
       </div>
     </div>
 
-    <div class="finding-card" data-severity="HIGH" data-category="Authentication &amp; IdP">
+    <div class="finding-card" data-severity="HIGH" data-category="Prevention Policy">
       <div class="finding-header">
         <span class="sev-badge HIGH">HIGH</span>
-        <span class="finding-title">SAML configuration weaknesses</span>
-        <span class="finding-id">AUTH-003</span>
+        <span class="finding-title">Behavioral prevention gaps in &#x27;VIP-Policy&#x27; (5)</span>
+        <span class="finding-id">PREV-003</span>
         <span class="finding-chevron">&#9654;</span>
       </div>
       <div class="finding-body">
         <div class="finding-section">
           <div class="finding-section-title">Description</div>
-          <p>2 SAML issue(s).</p>
+          <p>Behavioral IOA settings disabled — exploits and scripts may not be blocked.</p>
+        </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Affected Items (5)</div>
+                  <ul class="affected-list"><li>Suspicious Registry Ops: not set</li><li>Suspicious Scripts: not set</li><li>Intelligence-Sourced Threats: not set</li><li>Suspicious Kernel Drivers: not set</li><li>Interpreter Protection: not set</li></ul>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Remediation</div>
+                  <div class="remediation-text">Enable: Suspicious Processes, Registry Ops, Scripts, Intel Threats, Kernel Drivers.</div>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">References</div>
+                  <ul class="ref-list"><li>CrowdStrike — Behavior-Based Prevention</li></ul>
+                </div>
+      </div>
+    </div>
+
+    <div class="finding-card" data-severity="HIGH" data-category="Prevention Policy">
+      <div class="finding-header">
+        <span class="sev-badge HIGH">HIGH</span>
+        <span class="finding-title">ML detection levels low in &#x27;Default-Policy&#x27;</span>
+        <span class="finding-id">PREV-005</span>
+        <span class="finding-chevron">&#9654;</span>
+      </div>
+      <div class="finding-body">
+        <div class="finding-section">
+          <div class="finding-section-title">Description</div>
+          <p>Low ML sensitivity reduces zero-day detection.</p>
         </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">Affected Items (2)</div>
-                  <ul class="affected-list"><li>SAML assertion encryption: disabled</li><li>IDP-initiated SSO: enabled (replay risk)</li></ul>
+                  <ul class="affected-list"><li>Cloud ML: CAUTIOUS (recommend: MODERATE or AGGRESSIVE)</li><li>Sensor ML: DISABLED (recommend: MODERATE or AGGRESSIVE)</li></ul>
                 </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Sign SAML requests. Encrypt assertions. Disable IDP-initiated SSO.</div>
+                  <div class="remediation-text">Set ML levels to MODERATE minimum, AGGRESSIVE for high-security hosts.</div>
                 </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler — SAML Security Best Practices</li></ul>
+                  <ul class="ref-list"><li>CrowdStrike — ML Detection Levels</li></ul>
                 </div>
       </div>
     </div>
 
-    <div class="finding-card" data-severity="HIGH" data-category="DSPM">
+    <div class="finding-card" data-severity="HIGH" data-category="Prevention Policy">
       <div class="finding-header">
         <span class="sev-badge HIGH">HIGH</span>
-        <span class="finding-title">DSPM disabled</span>
-        <span class="finding-id">DSPM-001</span>
+        <span class="finding-title">Policies in detect-only mode (1)</span>
+        <span class="finding-id">PREV-006</span>
         <span class="finding-chevron">&#9654;</span>
       </div>
       <div class="finding-body">
         <div class="finding-section">
           <div class="finding-section-title">Description</div>
-          <p>DSPM service is disabled.</p>
-        </div>
-        
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Enable DSPM.</div>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler DSPM</li></ul>
-                </div>
-      </div>
-    </div>
-
-    <div class="finding-card" data-severity="HIGH" data-category="DSPM">
-      <div class="finding-header">
-        <span class="sev-badge HIGH">HIGH</span>
-        <span class="finding-title">Data exposure monitoring not enabled</span>
-        <span class="finding-id">DSPM-004</span>
-        <span class="finding-chevron">&#9654;</span>
-      </div>
-      <div class="finding-body">
-        <div class="finding-section">
-          <div class="finding-section-title">Description</div>
-          <p>Public/external data exposure not being monitored.</p>
-        </div>
-        
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Enable data exposure monitoring for SaaS and cloud.</div>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler DSPM — Exposure Detection</li></ul>
-                </div>
-      </div>
-    </div>
-
-    <div class="finding-card" data-severity="HIGH" data-category="Audit &amp; Compliance">
-      <div class="finding-header">
-        <span class="sev-badge HIGH">HIGH</span>
-        <span class="finding-title">Nanolog Streaming Service (NSS) not configured</span>
-        <span class="finding-id">AUDIT-003</span>
-        <span class="finding-chevron">&#9654;</span>
-      </div>
-      <div class="finding-body">
-        <div class="finding-section">
-          <div class="finding-section-title">Description</div>
-          <p>Logs not streamed to external SIEM.</p>
-        </div>
-        
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Configure NSS to stream logs to Splunk/Sentinel/QRadar.</div>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler — NSS Integration</li><li>Security Analytics Best Practices</li></ul>
-                </div>
-      </div>
-    </div>
-
-    <div class="finding-card" data-severity="HIGH" data-category="Audit &amp; Compliance">
-      <div class="finding-header">
-        <span class="sev-badge HIGH">HIGH</span>
-        <span class="finding-title">Locations without authentication (2)</span>
-        <span class="finding-id">AUDIT-005</span>
-        <span class="finding-chevron">&#9654;</span>
-      </div>
-      <div class="finding-body">
-        <div class="finding-section">
-          <div class="finding-section-title">Description</div>
-          <p>Locations allowing unauthenticated traffic bypass user policies.</p>
-        </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Affected Items (2)</div>
-                  <ul class="affected-list"><li>Branch-London</li><li>Guest-WiFi</li></ul>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Enable authentication on all locations.</div>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler — Location Authentication</li></ul>
-                </div>
-      </div>
-    </div>
-
-    <div class="finding-card" data-severity="HIGH" data-category="Audit &amp; Compliance">
-      <div class="finding-header">
-        <span class="sev-badge HIGH">HIGH</span>
-        <span class="finding-title">Forwarding rules bypassing Zscaler (2)</span>
-        <span class="finding-id">AUDIT-006</span>
-        <span class="finding-chevron">&#9654;</span>
-      </div>
-      <div class="finding-body">
-        <div class="finding-section">
-          <div class="finding-section-title">Description</div>
-          <p>Forwarding rules send traffic directly, bypassing ZIA inspection.</p>
-        </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Affected Items (2)</div>
-                  <ul class="affected-list"><li>Direct-VoIP</li><li>Direct-Backup</li></ul>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Minimize bypass/direct rules. Forward all traffic through ZIA.</div>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler — Forwarding Policy Best Practices</li></ul>
-                </div>
-      </div>
-    </div>
-
-    <div class="finding-card" data-severity="MEDIUM" data-category="ZIA URL Filtering">
-      <div class="finding-header">
-        <span class="sev-badge MEDIUM">MEDIUM</span>
-        <span class="finding-title">Caution/warning pages disabled</span>
-        <span class="finding-id">ZIA-URL-004</span>
-        <span class="finding-chevron">&#9654;</span>
-      </div>
-      <div class="finding-body">
-        <div class="finding-section">
-          <div class="finding-section-title">Description</div>
-          <p>User caution interstitials are disabled.</p>
-        </div>
-        
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Enable caution pages for risky categories.</div>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler — Caution Page Best Practices</li></ul>
-                </div>
-      </div>
-    </div>
-
-    <div class="finding-card" data-severity="MEDIUM" data-category="ZIA URL Filtering">
-      <div class="finding-header">
-        <span class="sev-badge MEDIUM">MEDIUM</span>
-        <span class="finding-title">Safe search enforcement not enabled</span>
-        <span class="finding-id">ZIA-URL-005</span>
-        <span class="finding-chevron">&#9654;</span>
-      </div>
-      <div class="finding-body">
-        <div class="finding-section">
-          <div class="finding-section-title">Description</div>
-          <p>Google/Bing safe search not enforced.</p>
-        </div>
-        
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Enable safe search: Administration &gt; Advanced Settings.</div>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler Baseline — Safe Search</li></ul>
-                </div>
-      </div>
-    </div>
-
-    <div class="finding-card" data-severity="MEDIUM" data-category="ZIA SSL Inspection">
-      <div class="finding-header">
-        <span class="sev-badge MEDIUM">MEDIUM</span>
-        <span class="finding-title">Certificate pinning detection disabled</span>
-        <span class="finding-id">ZIA-SSL-003</span>
-        <span class="finding-chevron">&#9654;</span>
-      </div>
-      <div class="finding-body">
-        <div class="finding-section">
-          <div class="finding-section-title">Description</div>
-          <p>Certificate pinning detection is off.</p>
-        </div>
-        
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Enable cert pinning detection to auto-bypass pinned apps.</div>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler — Certificate Pinning</li></ul>
-                </div>
-      </div>
-    </div>
-
-    <div class="finding-card" data-severity="MEDIUM" data-category="ZIA Cloud Firewall">
-      <div class="finding-header">
-        <span class="sev-badge MEDIUM">MEDIUM</span>
-        <span class="finding-title">Firewall rules without logging (1)</span>
-        <span class="finding-id">ZIA-FW-004</span>
-        <span class="finding-chevron">&#9654;</span>
-      </div>
-      <div class="finding-body">
-        <div class="finding-section">
-          <div class="finding-section-title">Description</div>
-          <p>Rules without logging miss visibility.</p>
+          <p>Settings detect threats but do NOT block them.</p>
         </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">Affected Items (1)</div>
-                  <ul class="affected-list"><li>Allow-ICMP</li></ul>
+                  <ul class="affected-list"><li>&#x27;Default-Policy&#x27;: 7 settings in detect-only mode</li></ul>
                 </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Enable logging on all firewall rules.</div>
+                  <div class="remediation-text">After tuning baseline, switch from detect-only to prevent mode.</div>
                 </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler — Firewall Logging</li></ul>
+                  <ul class="ref-list"><li>CrowdStrike — Deployment: Detect → Prevent</li></ul>
                 </div>
       </div>
     </div>
 
-    <div class="finding-card" data-severity="MEDIUM" data-category="ZIA Threat Prevention">
+    <div class="finding-card" data-severity="HIGH" data-category="Prevention Policy">
       <div class="finding-header">
-        <span class="sev-badge MEDIUM">MEDIUM</span>
-        <span class="finding-title">Vulnerable browser blocking not enabled</span>
-        <span class="finding-id">ZIA-THREAT-005</span>
+        <span class="sev-badge HIGH">HIGH</span>
+        <span class="finding-title">Script-Based Execution Monitoring disabled in &#x27;Default-Policy&#x27;</span>
+        <span class="finding-id">PREV-010</span>
         <span class="finding-chevron">&#9654;</span>
       </div>
       <div class="finding-body">
         <div class="finding-section">
           <div class="finding-section-title">Description</div>
-          <p>Users can browse with outdated/vulnerable browsers.</p>
+          <p>PowerShell, VBScript, JScript, and macro monitoring is off.</p>
         </div>
         
         
                 <div class="finding-section">
                   <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Enable browser vulnerability control.</div>
+                  <div class="remediation-text">Enable Script-Based Execution Monitoring.</div>
                 </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler Baseline — Browser Control</li></ul>
+                  <ul class="ref-list"><li>CrowdStrike — Script Monitoring</li></ul>
                 </div>
       </div>
     </div>
 
-    <div class="finding-card" data-severity="MEDIUM" data-category="DLP &amp; Data Protection">
+    <div class="finding-card" data-severity="HIGH" data-category="Sensor Updates">
       <div class="finding-header">
-        <span class="sev-badge MEDIUM">MEDIUM</span>
-        <span class="finding-title">Standard DLP dictionaries missing (6)</span>
-        <span class="finding-id">ZIA-DLP-002</span>
+        <span class="sev-badge HIGH">HIGH</span>
+        <span class="finding-title">Sensor uninstall protection disabled (1)</span>
+        <span class="finding-id">UPD-004</span>
         <span class="finding-chevron">&#9654;</span>
       </div>
       <div class="finding-body">
         <div class="finding-section">
           <div class="finding-section-title">Description</div>
-          <p>6 standard dictionaries not configured.</p>
+          <p>Sensors can be removed by local admins without a maintenance token.</p>
+        </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Affected Items (1)</div>
+                  <ul class="affected-list"><li>Pinned-Legacy</li></ul>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Remediation</div>
+                  <div class="remediation-text">Enable Uninstall and Maintenance Protection on all policies.</div>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">References</div>
+                  <ul class="ref-list"><li>CrowdStrike — Uninstall Protection</li></ul>
+                </div>
+      </div>
+    </div>
+
+    <div class="finding-card" data-severity="HIGH" data-category="Exclusion Audit">
+      <div class="finding-header">
+        <span class="sev-badge HIGH">HIGH</span>
+        <span class="finding-title">ML exclusions applied to ALL hosts (5)</span>
+        <span class="finding-id">EXC-002</span>
+        <span class="finding-chevron">&#9654;</span>
+      </div>
+      <div class="finding-body">
+        <div class="finding-section">
+          <div class="finding-section-title">Description</div>
+          <p>Global exclusions affect every endpoint.</p>
+        </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Affected Items (5)</div>
+                  <ul class="affected-list"><li>C:\Windows\Temp\*</li><li>C:\Users\*\AppData\Local\Temp\*</li><li>*.ps1</li><li>D:\Backups\**</li><li>C:\Program Files\LegacyApp\*</li></ul>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Remediation</div>
+                  <div class="remediation-text">Scope exclusions to specific host groups, not global.</div>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">References</div>
+                  <ul class="ref-list"><li>CrowdStrike — Scoped Exclusions</li></ul>
+                </div>
+      </div>
+    </div>
+
+    <div class="finding-card" data-severity="HIGH" data-category="Exclusion Audit">
+      <div class="finding-header">
+        <span class="sev-badge HIGH">HIGH</span>
+        <span class="finding-title">Excessive IOA exclusions (25)</span>
+        <span class="finding-id">EXC-003</span>
+        <span class="finding-chevron">&#9654;</span>
+      </div>
+      <div class="finding-body">
+        <div class="finding-section">
+          <div class="finding-section-title">Description</div>
+          <p>Many IOA exclusions reduce behavioral detection coverage.</p>
+        </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Affected Items (1)</div>
+                  <ul class="affected-list"><li>Total IOA exclusions: 25</li></ul>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Remediation</div>
+                  <div class="remediation-text">Review and remove unnecessary IOA exclusions. Each one is a detection blind spot.</div>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">References</div>
+                  <ul class="ref-list"><li>CrowdStrike — IOA Exclusion Management</li></ul>
+                </div>
+      </div>
+    </div>
+
+    <div class="finding-card" data-severity="HIGH" data-category="Exclusion Audit">
+      <div class="finding-header">
+        <span class="sev-badge HIGH">HIGH</span>
+        <span class="finding-title">Wildcard exclusions detected (7)</span>
+        <span class="finding-id">EXC-005</span>
+        <span class="finding-chevron">&#9654;</span>
+      </div>
+      <div class="finding-body">
+        <div class="finding-section">
+          <div class="finding-section-title">Description</div>
+          <p>Wildcard exclusions (\*, /**) are overly broad.</p>
+        </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Affected Items (7)</div>
+                  <ul class="affected-list"><li>C:\Windows\Temp\*</li><li>C:\Users\*\AppData\Local\Temp\*</li><li>C:\ProgramData\CompanyApp\*</li><li>D:\Backups\**</li><li>C:\Program Files\LegacyApp\*</li><li>C:\Windows\Temp\*</li><li>/tmp/*</li></ul>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Remediation</div>
+                  <div class="remediation-text">Replace wildcards with specific file/process exclusions.</div>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">References</div>
+                  <ul class="ref-list"><li>CrowdStrike — Exclusion Best Practices</li></ul>
+                </div>
+      </div>
+    </div>
+
+    <div class="finding-card" data-severity="HIGH" data-category="Sensor Health">
+      <div class="finding-header">
+        <span class="sev-badge HIGH">HIGH</span>
+        <span class="finding-title">Sensors not in normal status (2)</span>
+        <span class="finding-id">SENSOR-001</span>
+        <span class="finding-chevron">&#9654;</span>
+      </div>
+      <div class="finding-body">
+        <div class="finding-section">
+          <div class="finding-section-title">Description</div>
+          <p>Sensors offline/degraded = no protection.</p>
+        </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Affected Items (2)</div>
+                  <ul class="affected-list"><li>SRV-002</li><li>OLD-PC</li></ul>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Remediation</div>
+                  <div class="remediation-text">Investigate offline sensors. Reinstall if necessary.</div>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">References</div>
+                  <ul class="ref-list"><li>CrowdStrike — Sensor Troubleshooting</li></ul>
+                </div>
+      </div>
+    </div>
+
+    <div class="finding-card" data-severity="HIGH" data-category="Admin Security">
+      <div class="finding-header">
+        <span class="sev-badge HIGH">HIGH</span>
+        <span class="finding-title">Falcon console users without MFA (2)</span>
+        <span class="finding-id">ADMIN-002</span>
+        <span class="finding-chevron">&#9654;</span>
+      </div>
+      <div class="finding-body">
+        <div class="finding-section">
+          <div class="finding-section-title">Description</div>
+          <p>Console access without MFA = account takeover risk.</p>
+        </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Affected Items (2)</div>
+                  <ul class="affected-list"><li>soc2@corp.com</li><li>contractor@vendor.com</li></ul>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Remediation</div>
+                  <div class="remediation-text">Enforce MFA for all Falcon console users.</div>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">References</div>
+                  <ul class="ref-list"><li>CrowdStrike — MFA Configuration</li></ul>
+                </div>
+      </div>
+    </div>
+
+    <div class="finding-card" data-severity="HIGH" data-category="Admin Security">
+      <div class="finding-header">
+        <span class="sev-badge HIGH">HIGH</span>
+        <span class="finding-title">API clients with broad scopes (1)</span>
+        <span class="finding-id">ADMIN-003</span>
+        <span class="finding-chevron">&#9654;</span>
+      </div>
+      <div class="finding-body">
+        <div class="finding-section">
+          <div class="finding-section-title">Description</div>
+          <p>API clients with write/admin access.</p>
+        </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Affected Items (1)</div>
+                  <ul class="affected-list"><li>Automation-Bot</li></ul>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Remediation</div>
+                  <div class="remediation-text">Restrict API scopes to minimum required. Use read-only where possible.</div>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">References</div>
+                  <ul class="ref-list"><li>CrowdStrike — OAuth2 API Scopes</li></ul>
+                </div>
+      </div>
+    </div>
+
+    <div class="finding-card" data-severity="MEDIUM" data-category="Prevention Policy">
+      <div class="finding-header">
+        <span class="sev-badge MEDIUM">MEDIUM</span>
+        <span class="finding-title">Exploit mitigations disabled in &#x27;Default-Policy&#x27; (5)</span>
+        <span class="finding-id">PREV-004</span>
+        <span class="finding-chevron">&#9654;</span>
+      </div>
+      <div class="finding-body">
+        <div class="finding-section">
+          <div class="finding-section-title">Description</div>
+          <p>Memory exploit protections not fully enabled.</p>
+        </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Affected Items (5)</div>
+                  <ul class="affected-list"><li>Force ASLR: not enabled — Address Space Layout Randomization</li><li>Force DEP: not enabled — Data Execution Prevention</li><li>Heap Spray Protection: not enabled — Heap spray preallocation</li><li>Null Page Allocation: not enabled — Null page protection</li><li>SEH Overwrite: not enabled — Structured Exception Handler protection</li></ul>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Remediation</div>
+                  <div class="remediation-text">Enable ASLR, DEP, Heap Spray, Null Page, and SEH protections.</div>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">References</div>
+                  <ul class="ref-list"><li>CrowdStrike — Exploit Mitigation Settings</li></ul>
+                </div>
+      </div>
+    </div>
+
+    <div class="finding-card" data-severity="MEDIUM" data-category="Prevention Policy">
+      <div class="finding-header">
+        <span class="sev-badge MEDIUM">MEDIUM</span>
+        <span class="finding-title">Exploit mitigations disabled in &#x27;Server-Policy&#x27; (5)</span>
+        <span class="finding-id">PREV-004</span>
+        <span class="finding-chevron">&#9654;</span>
+      </div>
+      <div class="finding-body">
+        <div class="finding-section">
+          <div class="finding-section-title">Description</div>
+          <p>Memory exploit protections not fully enabled.</p>
+        </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Affected Items (5)</div>
+                  <ul class="affected-list"><li>Force ASLR: not enabled — Address Space Layout Randomization</li><li>Force DEP: not enabled — Data Execution Prevention</li><li>Heap Spray Protection: not enabled — Heap spray preallocation</li><li>Null Page Allocation: not enabled — Null page protection</li><li>SEH Overwrite: not enabled — Structured Exception Handler protection</li></ul>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Remediation</div>
+                  <div class="remediation-text">Enable ASLR, DEP, Heap Spray, Null Page, and SEH protections.</div>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">References</div>
+                  <ul class="ref-list"><li>CrowdStrike — Exploit Mitigation Settings</li></ul>
+                </div>
+      </div>
+    </div>
+
+    <div class="finding-card" data-severity="MEDIUM" data-category="Prevention Policy">
+      <div class="finding-header">
+        <span class="sev-badge MEDIUM">MEDIUM</span>
+        <span class="finding-title">Exploit mitigations disabled in &#x27;VIP-Policy&#x27; (5)</span>
+        <span class="finding-id">PREV-004</span>
+        <span class="finding-chevron">&#9654;</span>
+      </div>
+      <div class="finding-body">
+        <div class="finding-section">
+          <div class="finding-section-title">Description</div>
+          <p>Memory exploit protections not fully enabled.</p>
+        </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Affected Items (5)</div>
+                  <ul class="affected-list"><li>Force ASLR: not enabled — Address Space Layout Randomization</li><li>Force DEP: not enabled — Data Execution Prevention</li><li>Heap Spray Protection: not enabled — Heap spray preallocation</li><li>Null Page Allocation: not enabled — Null page protection</li><li>SEH Overwrite: not enabled — Structured Exception Handler protection</li></ul>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Remediation</div>
+                  <div class="remediation-text">Enable ASLR, DEP, Heap Spray, Null Page, and SEH protections.</div>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">References</div>
+                  <ul class="ref-list"><li>CrowdStrike — Exploit Mitigation Settings</li></ul>
+                </div>
+      </div>
+    </div>
+
+    <div class="finding-card" data-severity="MEDIUM" data-category="Prevention Policy">
+      <div class="finding-header">
+        <span class="sev-badge MEDIUM">MEDIUM</span>
+        <span class="finding-title">Prevention policies not assigned to any host group (1)</span>
+        <span class="finding-id">PREV-007</span>
+        <span class="finding-chevron">&#9654;</span>
+      </div>
+      <div class="finding-body">
+        <div class="finding-section">
+          <div class="finding-section-title">Description</div>
+          <p>Unassigned policies have no effect on any hosts.</p>
+        </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Affected Items (1)</div>
+                  <ul class="affected-list"><li>Server-Policy</li></ul>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Remediation</div>
+                  <div class="remediation-text">Assign policies to appropriate host groups.</div>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">References</div>
+                  <ul class="ref-list"><li>CrowdStrike — Policy Assignment</li></ul>
+                </div>
+      </div>
+    </div>
+
+    <div class="finding-card" data-severity="MEDIUM" data-category="Sensor Updates">
+      <div class="finding-header">
+        <span class="sev-badge MEDIUM">MEDIUM</span>
+        <span class="finding-title">Sensor update policies with pinned versions (1)</span>
+        <span class="finding-id">UPD-002</span>
+        <span class="finding-chevron">&#9654;</span>
+      </div>
+      <div class="finding-body">
+        <div class="finding-section">
+          <div class="finding-section-title">Description</div>
+          <p>Pinned sensor versions miss new detection capabilities.</p>
+        </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Affected Items (1)</div>
+                  <ul class="affected-list"><li>Pinned-Legacy</li></ul>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Remediation</div>
+                  <div class="remediation-text">Use N-1 or N-2 auto-update. Avoid pinning to specific versions.</div>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">References</div>
+                  <ul class="ref-list"><li>CrowdStrike — Sensor Update Rings</li></ul>
+                </div>
+      </div>
+    </div>
+
+    <div class="finding-card" data-severity="MEDIUM" data-category="Sensor Updates">
+      <div class="finding-header">
+        <span class="sev-badge MEDIUM">MEDIUM</span>
+        <span class="finding-title">Multiple sensor versions deployed (4 versions)</span>
+        <span class="finding-id">UPD-003</span>
+        <span class="finding-chevron">&#9654;</span>
+      </div>
+      <div class="finding-body">
+        <div class="finding-section">
+          <div class="finding-section-title">Description</div>
+          <p>Too many sensor versions indicates inconsistent update policies.</p>
+        </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Affected Items (4)</div>
+                  <ul class="affected-list"><li>Version 7.10.18110: 5 hosts</li><li>Version 7.08.17608: 1 hosts</li><li>Version 6.45.15806: 1 hosts</li><li>Version 6.30.14505: 1 hosts</li></ul>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Remediation</div>
+                  <div class="remediation-text">Standardize on N-1 version. Use update rings.</div>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">References</div>
+                  <ul class="ref-list"><li>CrowdStrike — Sensor Version Management</li></ul>
+                </div>
+      </div>
+    </div>
+
+    <div class="finding-card" data-severity="MEDIUM" data-category="Response Policy">
+      <div class="finding-header">
+        <span class="sev-badge MEDIUM">MEDIUM</span>
+        <span class="finding-title">Unrestricted custom RTR scripts enabled</span>
+        <span class="finding-id">RSP-002</span>
+        <span class="finding-chevron">&#9654;</span>
+      </div>
+      <div class="finding-body">
+        <div class="finding-section">
+          <div class="finding-section-title">Description</div>
+          <p>Any admin can run custom scripts on endpoints.</p>
+        </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Affected Items (1)</div>
+                  <ul class="affected-list"><li>Default-RTR</li></ul>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Remediation</div>
+                  <div class="remediation-text">Restrict RTR to predefined commands. Require approval for custom scripts.</div>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">References</div>
+                  <ul class="ref-list"><li>CrowdStrike — RTR Security</li></ul>
+                </div>
+      </div>
+    </div>
+
+    <div class="finding-card" data-severity="MEDIUM" data-category="Device Control">
+      <div class="finding-header">
+        <span class="sev-badge MEDIUM">MEDIUM</span>
+        <span class="finding-title">USB policies with default ALLOW (1)</span>
+        <span class="finding-id">DEV-002</span>
+        <span class="finding-chevron">&#9654;</span>
+      </div>
+      <div class="finding-body">
+        <div class="finding-section">
+          <div class="finding-section-title">Description</div>
+          <p>All USB devices allowed by default.</p>
+        </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Affected Items (1)</div>
+                  <ul class="affected-list"><li>USB-Allow</li></ul>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Remediation</div>
+                  <div class="remediation-text">Set default action to BLOCK. Allowlist specific approved devices.</div>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">References</div>
+                  <ul class="ref-list"><li>CrowdStrike — USB Device Management</li></ul>
+                </div>
+      </div>
+    </div>
+
+    <div class="finding-card" data-severity="MEDIUM" data-category="Sensor Health">
+      <div class="finding-header">
+        <span class="sev-badge MEDIUM">MEDIUM</span>
+        <span class="finding-title">Stale sensors (&gt;30 days offline) (1)</span>
+        <span class="finding-id">SENSOR-003</span>
+        <span class="finding-chevron">&#9654;</span>
+      </div>
+      <div class="finding-body">
+        <div class="finding-section">
+          <div class="finding-section-title">Description</div>
+          <p>Hosts haven&#x27;t checked in for 30+ days.</p>
+        </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Affected Items (1)</div>
+                  <ul class="affected-list"><li>OLD-PC: last seen 2025-12-15</li></ul>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Remediation</div>
+                  <div class="remediation-text">Remove decommissioned hosts. Investigate unreachable sensors.</div>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">References</div>
+                  <ul class="ref-list"><li>CrowdStrike — Host Management</li></ul>
+                </div>
+      </div>
+    </div>
+
+    <div class="finding-card" data-severity="MEDIUM" data-category="Admin Security">
+      <div class="finding-header">
+        <span class="sev-badge MEDIUM">MEDIUM</span>
+        <span class="finding-title">Excessive Falcon admin accounts (6)</span>
+        <span class="finding-id">ADMIN-001</span>
+        <span class="finding-chevron">&#9654;</span>
+      </div>
+      <div class="finding-body">
+        <div class="finding-section">
+          <div class="finding-section-title">Description</div>
+          <p>Too many users with Falcon Admin role.</p>
         </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">Affected Items (6)</div>
-                  <ul class="affected-list"><li>Missing: PII</li><li>Missing: HIPAA</li><li>Missing: PCI</li><li>Missing: GDPR</li><li>Missing: Financial</li><li>Missing: Source Code</li></ul>
+                  <ul class="affected-list"><li>admin@corp.com</li><li>soc1@corp.com</li><li>soc2@corp.com</li><li>soc3@corp.com</li><li>it-ops@corp.com</li><li>contractor@vendor.com</li></ul>
                 </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Add DLP dictionaries for SSN, Credit Card, PII, HIPAA, PCI, GDPR.</div>
+                  <div class="remediation-text">Limit Falcon Admins. Use Endpoint Manager role for policy management.</div>
                 </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler — DLP Dictionary Best Practices</li></ul>
+                  <ul class="ref-list"><li>CrowdStrike — RBAC Best Practices</li></ul>
                 </div>
       </div>
     </div>
 
-    <div class="finding-card" data-severity="MEDIUM" data-category="DLP &amp; Data Protection">
+    <div class="finding-card" data-severity="MEDIUM" data-category="Custom IOAs">
       <div class="finding-header">
         <span class="sev-badge MEDIUM">MEDIUM</span>
-        <span class="finding-title">Exact Data Match (EDM) not enabled</span>
-        <span class="finding-id">ZIA-DLP-003</span>
+        <span class="finding-title">No custom IOA rules configured</span>
+        <span class="finding-id">IOA-001</span>
         <span class="finding-chevron">&#9654;</span>
       </div>
       <div class="finding-body">
         <div class="finding-section">
           <div class="finding-section-title">Description</div>
-          <p>EDM provides highest-accuracy DLP detection.</p>
+          <p>No environment-specific behavioral detection rules.</p>
         </div>
         
         
                 <div class="finding-section">
                   <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Enable EDM with indexed datasets for key data types.</div>
+                  <div class="remediation-text">Create custom IOA rules for your environment-specific threats.</div>
                 </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler — EDM Configuration</li></ul>
+                  <ul class="ref-list"><li>CrowdStrike — Custom IOA Rule Groups</li></ul>
                 </div>
       </div>
     </div>
 
-    <div class="finding-card" data-severity="MEDIUM" data-category="Cloud App Control">
-      <div class="finding-header">
-        <span class="sev-badge MEDIUM">MEDIUM</span>
-        <span class="finding-title">Shadow IT/SaaS discovery not enabled</span>
-        <span class="finding-id">ZIA-APP-003</span>
-        <span class="finding-chevron">&#9654;</span>
-      </div>
-      <div class="finding-body">
-        <div class="finding-section">
-          <div class="finding-section-title">Description</div>
-          <p>Unsanctioned SaaS usage is not being detected.</p>
-        </div>
-        
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Enable SaaS security and shadow IT discovery.</div>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler — SaaS Security</li></ul>
-                </div>
-      </div>
-    </div>
-
-    <div class="finding-card" data-severity="MEDIUM" data-category="Cloud App Control">
-      <div class="finding-header">
-        <span class="sev-badge MEDIUM">MEDIUM</span>
-        <span class="finding-title">Tenant restrictions not configured</span>
-        <span class="finding-id">ZIA-APP-004</span>
-        <span class="finding-chevron">&#9654;</span>
-      </div>
-      <div class="finding-body">
-        <div class="finding-section">
-          <div class="finding-section-title">Description</div>
-          <p>Users can access personal M365/Google tenants.</p>
-        </div>
-        
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Configure tenant restrictions for M365 and Google Workspace.</div>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler — Tenant Restrictions</li></ul>
-                </div>
-      </div>
-    </div>
-
-    <div class="finding-card" data-severity="MEDIUM" data-category="ZPA Access Policy">
-      <div class="finding-header">
-        <span class="sev-badge MEDIUM">MEDIUM</span>
-        <span class="finding-title">No ZPA rules use user risk score</span>
-        <span class="finding-id">ZPA-POL-004</span>
-        <span class="finding-chevron">&#9654;</span>
-      </div>
-      <div class="finding-body">
-        <div class="finding-section">
-          <div class="finding-section-title">Description</div>
-          <p>User risk scoring not used in any access decision.</p>
-        </div>
-        
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Enable adaptive access with user risk score levels.</div>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler — User Risk Scoring</li><li>ZPA Adaptive Access</li></ul>
-                </div>
-      </div>
-    </div>
-
-    <div class="finding-card" data-severity="MEDIUM" data-category="ZPA Access Policy">
-      <div class="finding-header">
-        <span class="sev-badge MEDIUM">MEDIUM</span>
-        <span class="finding-title">ZPA re-auth timeout too long (86400s)</span>
-        <span class="finding-id">ZPA-POL-006</span>
-        <span class="finding-chevron">&#9654;</span>
-      </div>
-      <div class="finding-body">
-        <div class="finding-section">
-          <div class="finding-section-title">Description</div>
-          <p>Long re-auth windows reduce session security.</p>
-        </div>
-        
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Set re-auth timeout ≤12 hours.</div>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler — Session Security</li></ul>
-                </div>
-      </div>
-    </div>
-
-    <div class="finding-card" data-severity="MEDIUM" data-category="ZPA Application Security">
-      <div class="finding-header">
-        <span class="sev-badge MEDIUM">MEDIUM</span>
-        <span class="finding-title">Application segments with many domains (1)</span>
-        <span class="finding-id">ZPA-APP-003</span>
-        <span class="finding-chevron">&#9654;</span>
-      </div>
-      <div class="finding-body">
-        <div class="finding-section">
-          <div class="finding-section-title">Description</div>
-          <p>Large segments reduce micro-segmentation granularity.</p>
-        </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Affected Items (1)</div>
-                  <ul class="affected-list"><li>Legacy-Apps</li></ul>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Break large segments into smaller, function-specific segments.</div>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler — Zero Trust Micro-Segmentation</li></ul>
-                </div>
-      </div>
-    </div>
-
-    <div class="finding-card" data-severity="MEDIUM" data-category="ZPA Application Security">
-      <div class="finding-header">
-        <span class="sev-badge MEDIUM">MEDIUM</span>
-        <span class="finding-title">Segments with bypass enabled (1)</span>
-        <span class="finding-id">ZPA-APP-004</span>
-        <span class="finding-chevron">&#9654;</span>
-      </div>
-      <div class="finding-body">
-        <div class="finding-section">
-          <div class="finding-section-title">Description</div>
-          <p>Bypass mode skips ZPA security controls.</p>
-        </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Affected Items (1)</div>
-                  <ul class="affected-list"><li>Bypass-Segment</li></ul>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Remove bypass where possible. Use Client Forwarding Policy instead.</div>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler ZPA — Bypass Settings</li></ul>
-                </div>
-      </div>
-    </div>
-
-    <div class="finding-card" data-severity="MEDIUM" data-category="ZPA Application Security">
-      <div class="finding-header">
-        <span class="sev-badge MEDIUM">MEDIUM</span>
-        <span class="finding-title">App segments without server groups (2)</span>
-        <span class="finding-id">ZPA-APP-005</span>
-        <span class="finding-chevron">&#9654;</span>
-      </div>
-      <div class="finding-body">
-        <div class="finding-section">
-          <div class="finding-section-title">Description</div>
-          <p>Segments without server group mappings may be unreachable.</p>
-        </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Affected Items (2)</div>
-                  <ul class="affected-list"><li>Bypass-Segment</li><li>Orphaned-Segment</li></ul>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Map all segments to appropriate server groups.</div>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler ZPA — Server Groups</li></ul>
-                </div>
-      </div>
-    </div>
-
-    <div class="finding-card" data-severity="MEDIUM" data-category="Admin &amp; Platform Security">
-      <div class="finding-header">
-        <span class="sev-badge MEDIUM">MEDIUM</span>
-        <span class="finding-title">No IP restrictions for admin access</span>
-        <span class="finding-id">ADM-004</span>
-        <span class="finding-chevron">&#9654;</span>
-      </div>
-      <div class="finding-body">
-        <div class="finding-section">
-          <div class="finding-section-title">Description</div>
-          <p>Admin portal accessible from any IP.</p>
-        </div>
-        
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Restrict admin access to corporate IP ranges.</div>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler — Admin IP Restrictions</li></ul>
-                </div>
-      </div>
-    </div>
-
-    <div class="finding-card" data-severity="MEDIUM" data-category="Admin &amp; Platform Security">
-      <div class="finding-header">
-        <span class="sev-badge MEDIUM">MEDIUM</span>
-        <span class="finding-title">API keys older than 1 year (1)</span>
-        <span class="finding-id">ADM-005</span>
-        <span class="finding-chevron">&#9654;</span>
-      </div>
-      <div class="finding-body">
-        <div class="finding-section">
-          <div class="finding-section-title">Description</div>
-          <p>Old API keys should be rotated.</p>
-        </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Affected Items (1)</div>
-                  <ul class="affected-list"><li>terraform-key</li></ul>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Rotate API keys annually.</div>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler API — Key Rotation</li></ul>
-                </div>
-      </div>
-    </div>
-
-    <div class="finding-card" data-severity="MEDIUM" data-category="Authentication &amp; IdP">
-      <div class="finding-header">
-        <span class="sev-badge MEDIUM">MEDIUM</span>
-        <span class="finding-title">Surrogate IP idle timeout too long (120 min)</span>
-        <span class="finding-id">AUTH-004</span>
-        <span class="finding-chevron">&#9654;</span>
-      </div>
-      <div class="finding-body">
-        <div class="finding-section">
-          <div class="finding-section-title">Description</div>
-          <p>Long surrogate IP timeout allows impersonation risk.</p>
-        </div>
-        
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Set surrogate IP idle timeout ≤60 minutes.</div>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler — Surrogate IP Settings</li></ul>
-                </div>
-      </div>
-    </div>
-
-    <div class="finding-card" data-severity="MEDIUM" data-category="DSPM">
-      <div class="finding-header">
-        <span class="sev-badge MEDIUM">MEDIUM</span>
-        <span class="finding-title">Insufficient data classification categories</span>
-        <span class="finding-id">DSPM-003</span>
-        <span class="finding-chevron">&#9654;</span>
-      </div>
-      <div class="finding-body">
-        <div class="finding-section">
-          <div class="finding-section-title">Description</div>
-          <p>Only 1 classification categories defined.</p>
-        </div>
-        
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Add categories: PII, Financial, Healthcare, IP, Credentials.</div>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler DSPM — Classification Best Practices</li></ul>
-                </div>
-      </div>
-    </div>
-
-    <div class="finding-card" data-severity="MEDIUM" data-category="DSPM">
-      <div class="finding-header">
-        <span class="sev-badge MEDIUM">MEDIUM</span>
-        <span class="finding-title">No DSPM enforcement policies</span>
-        <span class="finding-id">DSPM-005</span>
-        <span class="finding-chevron">&#9654;</span>
-      </div>
-      <div class="finding-body">
-        <div class="finding-section">
-          <div class="finding-section-title">Description</div>
-          <p>DSPM has no enforcement policies — findings are informational only.</p>
-        </div>
-        
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Create DSPM policies to enforce data handling rules.</div>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler DSPM — Policy Enforcement</li></ul>
-                </div>
-      </div>
-    </div>
-
-    <div class="finding-card" data-severity="MEDIUM" data-category="DSPM">
-      <div class="finding-header">
-        <span class="sev-badge MEDIUM">MEDIUM</span>
-        <span class="finding-title">Data-at-rest scanning not enabled</span>
-        <span class="finding-id">DSPM-006</span>
-        <span class="finding-chevron">&#9654;</span>
-      </div>
-      <div class="finding-body">
-        <div class="finding-section">
-          <div class="finding-section-title">Description</div>
-          <p>Sensitive data in SaaS/cloud storage not being scanned.</p>
-        </div>
-        
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Enable data-at-rest scanning for SaaS (M365, GWS, Box, etc.).</div>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler DSPM — Data at Rest</li></ul>
-                </div>
-      </div>
-    </div>
-
-    <div class="finding-card" data-severity="MEDIUM" data-category="Audit &amp; Compliance">
-      <div class="finding-header">
-        <span class="sev-badge MEDIUM">MEDIUM</span>
-        <span class="finding-title">Log retention below 365 days (180d)</span>
-        <span class="finding-id">AUDIT-004</span>
-        <span class="finding-chevron">&#9654;</span>
-      </div>
-      <div class="finding-body">
-        <div class="finding-section">
-          <div class="finding-section-title">Description</div>
-          <p>Retention: 180 days. Many frameworks require 1+ year.</p>
-        </div>
-        
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Increase retention or export to long-term SIEM storage.</div>
-                </div>
-        
-                <div class="finding-section">
-                  <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler — Nanolog Retention</li></ul>
-                </div>
-      </div>
-    </div>
-
-    <div class="finding-card" data-severity="LOW" data-category="ZIA Cloud Firewall">
+    <div class="finding-card" data-severity="LOW" data-category="Sensor Health">
       <div class="finding-header">
         <span class="sev-badge LOW">LOW</span>
-        <span class="finding-title">Many disabled firewall rules (6)</span>
-        <span class="finding-id">ZIA-FW-005</span>
+        <span class="finding-title">Sensor OS distribution (informational)</span>
+        <span class="finding-id">SENSOR-004</span>
         <span class="finding-chevron">&#9654;</span>
       </div>
       <div class="finding-body">
         <div class="finding-section">
           <div class="finding-section-title">Description</div>
-          <p>Disabled rules clutter the policy.</p>
+          <p>Sensor fleet composition for coverage analysis.</p>
         </div>
         
                 <div class="finding-section">
-                  <div class="finding-section-title">Affected Items (6)</div>
-                  <ul class="affected-list"><li>Disabled-Legacy</li><li>Disabled-Old</li><li>Disabled-Test1</li><li>Disabled-Test2</li><li>Disabled-Test3</li><li>Disabled-Test4</li></ul>
+                  <div class="finding-section-title">Affected Items (3)</div>
+                  <ul class="affected-list"><li>Windows: 5 hosts</li><li>Linux: 2 hosts</li><li>Mac: 1 hosts</li></ul>
                 </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">Remediation</div>
-                  <div class="remediation-text">Review and remove unnecessary disabled rules.</div>
+                  <div class="remediation-text">Ensure all OS types have appropriate prevention policies.</div>
                 </div>
         
                 <div class="finding-section">
                   <div class="finding-section-title">References</div>
-                  <ul class="ref-list"><li>Zscaler — Rule Hygiene</li></ul>
+                  <ul class="ref-list"><li>CrowdStrike — Platform Coverage</li></ul>
+                </div>
+      </div>
+    </div>
+
+    <div class="finding-card" data-severity="LOW" data-category="Admin Security">
+      <div class="finding-header">
+        <span class="sev-badge LOW">LOW</span>
+        <span class="finding-title">No custom admin roles defined</span>
+        <span class="finding-id">ADMIN-004</span>
+        <span class="finding-chevron">&#9654;</span>
+      </div>
+      <div class="finding-body">
+        <div class="finding-section">
+          <div class="finding-section-title">Description</div>
+          <p>Using only default roles — may not follow least privilege.</p>
+        </div>
+        
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Remediation</div>
+                  <div class="remediation-text">Create custom roles for SOC analysts, policy managers, read-only.</div>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">References</div>
+                  <ul class="ref-list"><li>CrowdStrike — Custom RBAC Roles</li></ul>
+                </div>
+      </div>
+    </div>
+
+    <div class="finding-card" data-severity="LOW" data-category="MITRE Coverage">
+      <div class="finding-header">
+        <span class="sev-badge LOW">LOW</span>
+        <span class="finding-title">MITRE ATT&amp;CK technique coverage assessment</span>
+        <span class="finding-id">MITRE-001</span>
+        <span class="finding-chevron">&#9654;</span>
+      </div>
+      <div class="finding-body">
+        <div class="finding-section">
+          <div class="finding-section-title">Description</div>
+          <p>Top 10 MITRE ATT&amp;CK techniques and prevention posture.</p>
+        </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Affected Items (11)</div>
+                  <ul class="affected-list"><li>T1059 — Command and Scripting Interpreter</li><li>T1053 — Scheduled Task/Job</li><li>T1003 — OS Credential Dumping</li><li>T1021 — Remote Services</li><li>T1055 — Process Injection</li><li>T1078 — Valid Accounts</li><li>T1486 — Data Encrypted for Impact (Ransomware)</li><li>T1082 — System Information Discovery</li><li>T1047 — Windows Management Instrumentation</li><li>T1218 — System Binary Proxy Execution (LOLBins)</li><li>No gaps detected</li></ul>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">Remediation</div>
+                  <div class="remediation-text">Map prevention settings to MITRE ATT&amp;CK matrix. Close detection gaps.</div>
+                </div>
+        
+                <div class="finding-section">
+                  <div class="finding-section-title">References</div>
+                  <ul class="ref-list"><li>MITRE ATT&amp;CK — Enterprise</li><li>CrowdStrike — ATT&amp;CK Coverage</li></ul>
                 </div>
       </div>
     </div>
   </div>
 
   <div class="footer">
-    Zscaler SASE Security Scanner &middot; Generated 2026-03-08T05:43:30 &middot;
+    CrowdStrike Falcon Security Scanner &middot; Generated 2026-03-08T07:27:04 &middot;
     For authorized security assessments only
   </div>
 </div>

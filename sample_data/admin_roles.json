@@ -1,0 +1,16 @@
+{
+  "resources": [
+    {
+      "name": "Falcon Administrator",
+      "is_default": true
+    },
+    {
+      "name": "Endpoint Manager",
+      "is_default": true
+    },
+    {
+      "name": "Read Only Analyst",
+      "is_default": true
+    }
+  ]
+}

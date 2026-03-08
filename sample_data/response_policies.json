@@ -1,0 +1,12 @@
+{
+  "resources": [
+    {
+      "name": "Default-RTR",
+      "settings": {
+        "real_time_response": true,
+        "custom_scripts": true,
+        "run_scripts_unrestricted": true
+      }
+    }
+  ]
+}

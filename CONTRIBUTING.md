@@ -1,7 +1,5 @@
 # Contributing
-## Adding Checks
-1. Add check_* method to appropriate auditor in modules/
-2. Register in zscaler_scanner.py MODULE_MAP if new module
-3. Add sample data in generate_sample_data section
-4. Test: python zscaler_scanner.py --data-dir ./sample_data
-5. Update README
+1. Add check_* method to appropriate module
+2. Add sample data demonstrating the finding
+3. Test: python cs_scanner.py --data-dir ./sample_data
+4. Update README

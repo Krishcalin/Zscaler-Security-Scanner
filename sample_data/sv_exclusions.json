@@ -1,0 +1,10 @@
+{
+  "resources": [
+    {
+      "value": "C:\\Windows\\Temp\\*"
+    },
+    {
+      "value": "/tmp/*"
+    }
+  ]
+}

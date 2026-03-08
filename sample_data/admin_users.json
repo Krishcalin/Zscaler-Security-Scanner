@@ -1,34 +1,46 @@
 {
-  "admins": [
+  "resources": [
     {
-      "userName": "superadmin@corp.com",
-      "role": "SUPER_ADMIN",
-      "lastLogin": "2026-03-07"
+      "uid": "admin@corp.com",
+      "roles": [
+        "falcon_admin"
+      ],
+      "mfa_enabled": true
     },
     {
-      "userName": "admin2@corp.com",
-      "role": "SUPER_ADMIN",
-      "lastLogin": "2026-03-05"
+      "uid": "soc1@corp.com",
+      "roles": [
+        "falcon_admin"
+      ],
+      "mfa_enabled": true
     },
     {
-      "userName": "admin3@corp.com",
-      "role": "SUPER_ADMIN",
-      "lastLogin": "2026-02-01"
+      "uid": "soc2@corp.com",
+      "roles": [
+        "falcon_admin"
+      ],
+      "mfa_enabled": false
     },
     {
-      "userName": "admin4@corp.com",
-      "role": "SUPER_ADMIN",
-      "lastLogin": "2025-10-15"
+      "uid": "soc3@corp.com",
+      "roles": [
+        "falcon_admin"
+      ],
+      "mfa_enabled": true
     },
     {
-      "userName": "readonly@corp.com",
-      "role": "READONLY_ADMIN",
-      "lastLogin": "2026-03-06"
+      "uid": "it-ops@corp.com",
+      "roles": [
+        "falcon_admin"
+      ],
+      "mfa_enabled": true
     },
     {
-      "userName": "old-admin@corp.com",
-      "role": "FULL_ADMIN",
-      "lastLogin": "2025-01-20"
+      "uid": "contractor@vendor.com",
+      "roles": [
+        "falcon_admin"
+      ],
+      "mfa_enabled": false
     }
   ]
 }

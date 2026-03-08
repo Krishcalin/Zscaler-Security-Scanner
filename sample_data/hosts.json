@@ -1,0 +1,76 @@
+{
+  "resources": [
+    {
+      "hostname": "WKS-001",
+      "status": "normal",
+      "agent_version": "7.10.18110",
+      "platform_name": "Windows",
+      "last_seen": "2026-03-08T10:00:00Z",
+      "reduced_functionality_mode": "false",
+      "prevention_policy": "Default-Policy"
+    },
+    {
+      "hostname": "WKS-002",
+      "status": "normal",
+      "agent_version": "7.10.18110",
+      "platform_name": "Windows",
+      "last_seen": "2026-03-07T08:00:00Z",
+      "reduced_functionality_mode": "false",
+      "prevention_policy": "Default-Policy"
+    },
+    {
+      "hostname": "SRV-001",
+      "status": "normal",
+      "agent_version": "7.08.17608",
+      "platform_name": "Windows",
+      "last_seen": "2026-03-08T09:00:00Z",
+      "reduced_functionality_mode": "false",
+      "prevention_policy": "Server-Policy"
+    },
+    {
+      "hostname": "SRV-002",
+      "status": "rfm",
+      "agent_version": "6.45.15806",
+      "platform_name": "Linux",
+      "last_seen": "2026-03-01T12:00:00Z",
+      "reduced_functionality_mode": "true",
+      "prevention_policy": ""
+    },
+    {
+      "hostname": "LNX-001",
+      "status": "normal",
+      "agent_version": "7.10.18110",
+      "platform_name": "Linux",
+      "last_seen": "2026-03-08T10:00:00Z",
+      "reduced_functionality_mode": "false",
+      "prevention_policy": "Default-Policy"
+    },
+    {
+      "hostname": "OLD-PC",
+      "status": "offline",
+      "agent_version": "6.30.14505",
+      "platform_name": "Windows",
+      "last_seen": "2025-12-15T10:00:00Z",
+      "reduced_functionality_mode": "false",
+      "prevention_policy": "Default-Policy"
+    },
+    {
+      "hostname": "MAC-001",
+      "status": "normal",
+      "agent_version": "7.10.18110",
+      "platform_name": "Mac",
+      "last_seen": "2026-03-08T10:00:00Z",
+      "reduced_functionality_mode": "false",
+      "prevention_policy": "VIP-Policy"
+    },
+    {
+      "hostname": "UNMANAGED-1",
+      "status": "normal",
+      "agent_version": "7.10.18110",
+      "platform_name": "Windows",
+      "last_seen": "2026-03-08T10:00:00Z",
+      "reduced_functionality_mode": "false",
+      "prevention_policy": ""
+    }
+  ]
+}

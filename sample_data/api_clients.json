@@ -1,0 +1,25 @@
+{
+  "resources": [
+    {
+      "name": "SIEM-Integration",
+      "scopes": [
+        "detections:read",
+        "events:read"
+      ]
+    },
+    {
+      "name": "Automation-Bot",
+      "scopes": [
+        "*",
+        "admin",
+        "write"
+      ]
+    },
+    {
+      "name": "Backup-Client",
+      "scopes": [
+        "hosts:read"
+      ]
+    }
+  ]
+}

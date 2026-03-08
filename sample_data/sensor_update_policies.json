@@ -1,0 +1,20 @@
+{
+  "resources": [
+    {
+      "name": "Auto-Update",
+      "settings": {
+        "build": "",
+        "uninstall_protection": "ENABLED",
+        "sensor_version": ""
+      }
+    },
+    {
+      "name": "Pinned-Legacy",
+      "settings": {
+        "build": "",
+        "uninstall_protection": "DISABLED",
+        "sensor_version": "6.45.15806"
+      }
+    }
+  ]
+}

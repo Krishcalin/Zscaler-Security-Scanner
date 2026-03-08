@@ -1,0 +1,10 @@
+{
+  "resources": [
+    {
+      "name": "USB-Allow",
+      "settings": {
+        "default_action": "ALLOW"
+      }
+    }
+  ]
+}

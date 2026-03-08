@@ -1,80 +1,225 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 230">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280">
   <defs>
+    <!-- Background — deep charcoal with purple-black undertone -->
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#04080f"/><stop offset="100%" style="stop-color:#051525"/>
+      <stop offset="0%" style="stop-color:#070a12"/>
+      <stop offset="35%" style="stop-color:#0e0a18"/>
+      <stop offset="100%" style="stop-color:#0a0812"/>
     </linearGradient>
+    <!-- CrowdStrike red accent bar -->
     <linearGradient id="topBar" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#0ea5e9"/><stop offset="50%" style="stop-color:#38bdf8"/><stop offset="100%" style="stop-color:#0284c7"/>
+      <stop offset="0%" style="stop-color:#e8272c"/>
+      <stop offset="35%" style="stop-color:#ff4d4d"/>
+      <stop offset="65%" style="stop-color:#e8272c"/>
+      <stop offset="100%" style="stop-color:#c41e22"/>
     </linearGradient>
-    <linearGradient id="sg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0ea5e9"/><stop offset="100%" style="stop-color:#38bdf8"/>
+    <!-- Shield stroke -->
+    <linearGradient id="shieldStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8272c"/>
+      <stop offset="50%" style="stop-color:#ff4d4d"/>
+      <stop offset="100%" style="stop-color:#c41e22"/>
     </linearGradient>
-    <linearGradient id="sf" x1="50%" y1="0%" x2="50%" y2="100%">
-      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:0.1"/><stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:0.01"/>
+    <!-- Shield interior -->
+    <linearGradient id="shieldFill" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8272c;stop-opacity:0.07"/>
+      <stop offset="100%" style="stop-color:#e8272c;stop-opacity:0.01"/>
     </linearGradient>
+    <!-- Radar sweep -->
+    <linearGradient id="radarSweep" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8272c;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#e8272c;stop-opacity:0"/>
+    </linearGradient>
+    <!-- Ambient glow -->
     <radialGradient id="glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:0.06"/><stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:0"/>
+      <stop offset="0%" style="stop-color:#e8272c;stop-opacity:0.06"/>
+      <stop offset="100%" style="stop-color:#e8272c;stop-opacity:0"/>
     </radialGradient>
-    <filter id="gl"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-    <clipPath id="clip"><rect width="900" height="230" rx="14"/></clipPath>
+    <!-- Second glow — top right for balance -->
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ff4d4d;stop-opacity:0.03"/>
+      <stop offset="100%" style="stop-color:#ff4d4d;stop-opacity:0"/>
+    </radialGradient>
+    <!-- Dot-grid texture -->
+    <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="0.4" fill="#e8272c" opacity="0.035"/>
+    </pattern>
+    <!-- Endpoint grid pattern -->
+    <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="40" x2="40" y2="40" stroke="#e8272c" stroke-width="0.15" opacity="0.04"/>
+      <line x1="40" y1="0" x2="40" y2="40" stroke="#e8272c" stroke-width="0.15" opacity="0.04"/>
+    </pattern>
+    <!-- Soft glow filter -->
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Sharper inner glow -->
+    <filter id="innerGlow">
+      <feGaussianBlur stdDeviation="1.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="clip"><rect width="900" height="280" rx="14"/></clipPath>
   </defs>
-  <rect width="900" height="230" rx="14" fill="url(#bg)"/>
+
+  <!-- ═══ Base layers ═══ -->
+  <rect width="900" height="280" rx="14" fill="url(#bg)"/>
+  <rect width="900" height="280" rx="14" fill="url(#dots)" clip-path="url(#clip)"/>
+  <rect width="900" height="280" rx="14" fill="url(#grid)" clip-path="url(#clip)"/>
+
+  <!-- Top accent bar -->
   <rect width="900" height="3" rx="1.5" fill="url(#topBar)" clip-path="url(#clip)"/>
-  <ellipse cx="100" cy="115" rx="110" ry="100" fill="url(#glow)"/>
-  <g transform="translate(42, 30)" filter="url(#gl)">
-    <path d="M56 8 L100 26 L100 82 C100 114 80 134 56 144 C32 134 12 114 12 82 L12 26 Z" fill="url(#sf)" stroke="url(#sg)" stroke-width="2"/>
-    <circle cx="56" cy="60" r="18" fill="none" stroke="#0ea5e9" stroke-width="1.5" opacity="0.6"/>
-    <circle cx="56" cy="60" r="10" fill="none" stroke="#38bdf8" stroke-width="1" opacity="0.4"/>
-    <circle cx="56" cy="60" r="3" fill="#0ea5e9" opacity="0.8"/>
-    <line x1="56" y1="42" x2="56" y2="35" stroke="#0ea5e9" stroke-width="1" opacity="0.5"/>
-    <line x1="56" y1="78" x2="56" y2="85" stroke="#0ea5e9" stroke-width="1" opacity="0.5"/>
-    <line x1="38" y1="60" x2="32" y2="60" stroke="#0ea5e9" stroke-width="1" opacity="0.5"/>
-    <line x1="74" y1="60" x2="80" y2="60" stroke="#0ea5e9" stroke-width="1" opacity="0.5"/>
-    <text x="56" y="105" font-family="monospace" font-size="7" fill="#38bdf8" text-anchor="middle" opacity="0.6">ZERO TRUST</text>
-    <path d="M44 115 L50 121 L68 103" fill="none" stroke="#0ea5e9" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Ambient glows -->
+  <ellipse cx="105" cy="140" rx="130" ry="120" fill="url(#glow)"/>
+  <ellipse cx="750" cy="80" rx="180" ry="100" fill="url(#glow2)"/>
+
+  <!-- ═══ Shield with Falcon + Radar + Crosshair ═══ -->
+  <g transform="translate(30, 30)" filter="url(#softGlow)">
+    <!-- Shield outline — larger and more detailed -->
+    <path d="M65 8 L118 30 L118 100 C118 140 94 165 65 176 C36 165 12 140 12 100 L12 30 Z"
+          fill="url(#shieldFill)" stroke="url(#shieldStroke)" stroke-width="2.4"/>
+
+    <!-- Inner shield ring -->
+    <path d="M65 22 L106 40 L106 96 C106 128 88 148 65 156 C42 148 24 128 24 96 L24 40 Z"
+          fill="none" stroke="#e8272c" stroke-width="0.4" opacity="0.15"/>
+
+    <!-- Radar concentric circles -->
+    <circle cx="65" cy="85" r="22" fill="none" stroke="#e8272c" stroke-width="0.5" opacity="0.12"/>
+    <circle cx="65" cy="85" r="35" fill="none" stroke="#e8272c" stroke-width="0.3" opacity="0.08"/>
+    <circle cx="65" cy="85" r="48" fill="none" stroke="#ff4d4d" stroke-width="0.2" opacity="0.05"/>
+
+    <!-- Radar sweep arc -->
+    <path d="M65 85 L65 50 A35 35 0 0 1 93 72 Z" fill="url(#radarSweep)"/>
+
+    <!-- Crosshair lines -->
+    <line x1="40" y1="85" x2="90" y2="85" stroke="#ff4d4d" stroke-width="0.4" opacity="0.2"/>
+    <line x1="65" y1="55" x2="65" y2="115" stroke="#ff4d4d" stroke-width="0.4" opacity="0.2"/>
+
+    <!-- Falcon bird — more detailed -->
+    <g transform="translate(37, 52)" filter="url(#innerGlow)">
+      <!-- Wing + body -->
+      <path d="M10 20 C14 8 22 3 30 5 C36 7 42 14 44 22 C46 30 42 38 36 42 L30 48 L24 42 C20 38 16 34 14 30 C12 26 8 24 10 20 Z"
+            fill="#e8272c" opacity="0.5"/>
+      <!-- Wing accent -->
+      <path d="M14 18 C18 10 24 6 30 7 C34 8 38 12 40 18"
+            fill="none" stroke="#ff4d4d" stroke-width="1" opacity="0.35" stroke-linecap="round"/>
+      <!-- Eye -->
+      <circle cx="32" cy="14" r="2.2" fill="#ff4d4d" opacity="0.8"/>
+      <circle cx="32" cy="14" r="0.8" fill="#fff" opacity="0.5"/>
+      <!-- Tail feathers -->
+      <path d="M15 28 L8 35" stroke="#e8272c" stroke-width="0.8" opacity="0.3" stroke-linecap="round"/>
+      <path d="M13 30 L6 38" stroke="#c41e22" stroke-width="0.6" opacity="0.25" stroke-linecap="round"/>
+    </g>
+
+    <!-- Detection dots on radar -->
+    <circle cx="50" cy="72" r="1.8" fill="#ff4d4d" opacity="0.6"/>
+    <circle cx="78" cy="92" r="1.5" fill="#e8272c" opacity="0.5"/>
+    <circle cx="58" cy="100" r="1.2" fill="#ff4d4d" opacity="0.4"/>
+    <circle cx="82" cy="75" r="1" fill="#c41e22" opacity="0.45"/>
+
+    <!-- Horizontal scan lines -->
+    <line x1="22" y1="125" x2="108" y2="125" stroke="#e8272c" stroke-width="0.4" opacity="0.12"/>
+    <line x1="28" y1="135" x2="102" y2="135" stroke="#ff4d4d" stroke-width="0.3" opacity="0.08"/>
+
+    <!-- Checkmark at bottom -->
+    <path d="M48 148 L58 158 L82 134" fill="none" stroke="#ff4d4d" stroke-width="3"
+          stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
   </g>
-  <text x="220" y="52" font-family="'Courier New', monospace" font-size="10" fill="#0ea5e9" letter-spacing="4.5" opacity="0.6">ZSCALER · SASE · DSPM</text>
-  <text x="220" y="92" font-family="'Segoe UI', 'Helvetica Neue', sans-serif" font-size="34" font-weight="700" fill="#f1f5f9">Zscaler Security Scanner</text>
-  <text x="220" y="126" font-family="'Courier New', monospace" font-size="20" fill="#38bdf8" font-weight="700" letter-spacing="1.5">ZIA + ZPA + DSPM</text>
-  <line x1="220" y1="140" x2="490" y2="140" stroke="#1e293b" stroke-width="1"/>
-  <text x="220" y="160" font-family="monospace" font-size="10" fill="#94a3b8">URL Filter</text>
-  <circle cx="279" cy="157" r="1.2" fill="#334155"/>
-  <text x="285" y="160" font-family="monospace" font-size="10" fill="#94a3b8">SSL</text>
-  <circle cx="307" cy="157" r="1.2" fill="#334155"/>
-  <text x="313" y="160" font-family="monospace" font-size="10" fill="#94a3b8">Firewall</text>
-  <circle cx="366" cy="157" r="1.2" fill="#334155"/>
-  <text x="372" y="160" font-family="monospace" font-size="10" fill="#94a3b8">DLP</text>
-  <circle cx="396" cy="157" r="1.2" fill="#334155"/>
-  <text x="402" y="160" font-family="monospace" font-size="10" fill="#94a3b8">ZTNA</text>
-  <circle cx="432" cy="157" r="1.2" fill="#334155"/>
-  <text x="438" y="160" font-family="monospace" font-size="10" fill="#94a3b8">DSPM</text>
-  <g transform="translate(220, 174)">
-    <rect x="0" y="0" width="90" height="22" rx="5" fill="rgba(14,165,233,0.06)" stroke="#0ea5e9" stroke-width="0.6"/>
-    <text x="45" y="15" font-family="monospace" font-size="8.5" fill="#0ea5e9" text-anchor="middle">FedRAMP High</text>
-    <rect x="98" y="0" width="72" height="22" rx="5" fill="rgba(56,189,248,0.06)" stroke="#38bdf8" stroke-width="0.6"/>
-    <text x="134" y="15" font-family="monospace" font-size="8.5" fill="#38bdf8" text-anchor="middle">SOC 2</text>
-    <rect x="178" y="0" width="80" height="22" rx="5" fill="rgba(2,132,199,0.06)" stroke="#0284c7" stroke-width="0.6"/>
-    <text x="218" y="15" font-family="monospace" font-size="8.5" fill="#0284c7" text-anchor="middle">ISO 27001</text>
-    <rect x="266" y="0" width="66" height="22" rx="5" fill="rgba(14,165,233,0.06)" stroke="#0ea5e9" stroke-width="0.6"/>
-    <text x="299" y="15" font-family="monospace" font-size="8.5" fill="#0ea5e9" text-anchor="middle">NIST</text>
+
+  <!-- ═══ Text Content ═══ -->
+
+  <!-- Brand label -->
+  <text x="230" y="55" font-family="'Courier New', 'Fira Mono', monospace" font-size="10.5"
+        fill="#e8272c" letter-spacing="5" opacity="0.55">CROWDSTRIKE FALCON</text>
+
+  <!-- Main title — two-tone -->
+  <text x="230" y="100" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="34" font-weight="700" fill="#f1f5f9" letter-spacing="-0.5">Deployment Validation</text>
+  <text x="230" y="132" font-family="'Courier New', 'Fira Mono', monospace"
+        font-size="26" font-weight="700" fill="#e8272c" letter-spacing="2">Scanner</text>
+
+  <!-- Separator -->
+  <line x1="230" y1="147" x2="590" y2="147" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Module pillar labels with dot separators -->
+  <g transform="translate(230, 164)">
+    <text x="0" y="10" font-family="'Segoe UI', sans-serif" font-size="11.5" fill="#94a3b8">Prevention</text>
+    <circle cx="66" cy="7" r="1.3" fill="#334155"/>
+    <text x="74" y="10" font-family="'Segoe UI', sans-serif" font-size="11.5" fill="#94a3b8">Exclusions</text>
+    <circle cx="144" cy="7" r="1.3" fill="#334155"/>
+    <text x="152" y="10" font-family="'Segoe UI', sans-serif" font-size="11.5" fill="#94a3b8">Sensors</text>
+    <circle cx="202" cy="7" r="1.3" fill="#334155"/>
+    <text x="210" y="10" font-family="'Segoe UI', sans-serif" font-size="11.5" fill="#94a3b8">Admin</text>
+    <circle cx="248" cy="7" r="1.3" fill="#334155"/>
+    <text x="256" y="10" font-family="'Segoe UI', sans-serif" font-size="11.5" fill="#94a3b8">MITRE</text>
+    <circle cx="296" cy="7" r="1.3" fill="#334155"/>
+    <text x="304" y="10" font-family="'Segoe UI', sans-serif" font-size="11.5" fill="#94a3b8">IOAs</text>
   </g>
-  <g transform="translate(770, 50)">
-    <rect x="0" y="0" width="80" height="30" rx="15" fill="rgba(14,165,233,0.07)" stroke="#0ea5e9" stroke-width="0.8"/>
-    <text x="40" y="20" font-family="monospace" font-size="14" fill="#0ea5e9" text-anchor="middle" font-weight="700">v1.0</text>
+
+  <!-- ═══ Compliance / Category Badges ═══ -->
+  <g transform="translate(230, 192)">
+    <!-- EDR Hardening — red -->
+    <rect x="0" y="0" width="108" height="24" rx="5"
+          fill="rgba(232,39,44,0.06)" stroke="#e8272c" stroke-width="0.7" opacity="0.85"/>
+    <text x="54" y="16" font-family="'Courier New', monospace" font-size="9" fill="#e8272c"
+          text-anchor="middle">EDR Hardening</text>
+
+    <!-- MITRE ATT&CK — bright red -->
+    <rect x="116" y="0" width="115" height="24" rx="5"
+          fill="rgba(255,77,77,0.06)" stroke="#ff4d4d" stroke-width="0.7" opacity="0.85"/>
+    <text x="173" y="16" font-family="'Courier New', monospace" font-size="9" fill="#ff4d4d"
+          text-anchor="middle">MITRE ATT&amp;CK</text>
+
+    <!-- Policy Audit — dark red -->
+    <rect x="239" y="0" width="108" height="24" rx="5"
+          fill="rgba(196,30,34,0.06)" stroke="#c41e22" stroke-width="0.7" opacity="0.85"/>
+    <text x="293" y="16" font-family="'Courier New', monospace" font-size="9" fill="#c41e22"
+          text-anchor="middle">Policy Audit</text>
+
+    <!-- Exclusion Hygiene — amber warning -->
+    <rect x="355" y="0" width="130" height="24" rx="5"
+          fill="rgba(245,158,11,0.06)" stroke="#f59e0b" stroke-width="0.7" opacity="0.85"/>
+    <text x="420" y="16" font-family="'Courier New', monospace" font-size="9" fill="#f59e0b"
+          text-anchor="middle">Exclusion Hygiene</text>
   </g>
+
+  <!-- ═══ Right Side — Version Pill + Stat Cards ═══ -->
+
+  <!-- Version pill -->
+  <g transform="translate(770, 48)">
+    <rect x="0" y="0" width="84" height="32" rx="16"
+          fill="rgba(232,39,44,0.07)" stroke="#e8272c" stroke-width="0.9"/>
+    <text x="42" y="21" font-family="'Courier New', monospace" font-size="15" fill="#e8272c"
+          text-anchor="middle" font-weight="700">v1.0</text>
+  </g>
+
+  <!-- Stat card: Modules -->
   <g transform="translate(740, 100)">
-    <rect x="0" y="0" width="120" height="30" rx="6" fill="rgba(15,23,42,0.6)" stroke="#1e293b" stroke-width="0.6"/>
-    <text x="12" y="20" font-family="monospace" font-size="18" fill="#0ea5e9" font-weight="700">12</text>
-    <text x="38" y="20" font-family="'Segoe UI', sans-serif" font-size="10" fill="#64748b">modules</text>
+    <rect x="0" y="0" width="125" height="32" rx="6"
+          fill="rgba(15,23,42,0.6)" stroke="#1e293b" stroke-width="0.6"/>
+    <text x="14" y="22" font-family="'Courier New', monospace" font-size="20" fill="#e8272c"
+          font-weight="700">10</text>
+    <text x="42" y="22" font-family="'Segoe UI', sans-serif" font-size="11" fill="#64748b">modules</text>
   </g>
-  <g transform="translate(740, 138)">
-    <rect x="0" y="0" width="120" height="30" rx="6" fill="rgba(15,23,42,0.6)" stroke="#1e293b" stroke-width="0.6"/>
-    <text x="12" y="20" font-family="monospace" font-size="18" fill="#38bdf8" font-weight="700">62+</text>
-    <text x="52" y="20" font-family="'Segoe UI', sans-serif" font-size="10" fill="#64748b">checks</text>
+
+  <!-- Stat card: Checks -->
+  <g transform="translate(740, 140)">
+    <rect x="0" y="0" width="125" height="32" rx="6"
+          fill="rgba(15,23,42,0.6)" stroke="#1e293b" stroke-width="0.6"/>
+    <text x="14" y="22" font-family="'Courier New', monospace" font-size="20" fill="#ff4d4d"
+          font-weight="700">36+</text>
+    <text x="58" y="22" font-family="'Segoe UI', sans-serif" font-size="11" fill="#64748b">checks</text>
   </g>
-  <g transform="translate(740, 176)">
-    <rect x="0" y="0" width="120" height="30" rx="6" fill="rgba(15,23,42,0.6)" stroke="#1e293b" stroke-width="0.6"/>
-    <text x="12" y="20" font-family="monospace" font-size="14" fill="#0284c7" font-weight="700">0</text>
-    <text x="28" y="20" font-family="'Segoe UI', sans-serif" font-size="10" fill="#64748b">dependencies</text>
+
+  <!-- Stat card: Dependencies -->
+  <g transform="translate(740, 180)">
+    <rect x="0" y="0" width="125" height="32" rx="6"
+          fill="rgba(15,23,42,0.6)" stroke="#1e293b" stroke-width="0.6"/>
+    <text x="14" y="22" font-family="'Courier New', monospace" font-size="16" fill="#c41e22"
+          font-weight="700">0</text>
+    <text x="30" y="22" font-family="'Segoe UI', sans-serif" font-size="11" fill="#64748b">dependencies</text>
   </g>
+
+  <!-- ═══ Bottom accent bar ═══ -->
+  <rect y="276" width="900" height="4" rx="2" fill="url(#topBar)" clip-path="url(#clip)" opacity="0.25"/>
 </svg>

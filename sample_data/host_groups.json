@@ -1,0 +1,20 @@
+{
+  "resources": [
+    {
+      "name": "HG-Workstations",
+      "assignment_rule": "platform:Windows"
+    },
+    {
+      "name": "HG-Servers",
+      "assignment_rule": "platform:Windows AND role:Server"
+    },
+    {
+      "name": "HG-Executives",
+      "assignment_rule": "tags:VIP"
+    },
+    {
+      "name": "HG-DevTeam",
+      "assignment_rule": "tags:Development"
+    }
+  ]
+}
