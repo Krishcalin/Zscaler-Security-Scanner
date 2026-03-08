@@ -1,0 +1,14 @@
+{
+  "adminMfa": false,
+  "adminIpRestriction": [],
+  "apiKeys": [
+    {
+      "name": "terraform-key",
+      "age_days": 450
+    },
+    {
+      "name": "siem-key",
+      "age_days": 200
+    }
+  ]
+}

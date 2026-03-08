@@ -1,0 +1,29 @@
+{
+  "connectors": [
+    {
+      "name": "DC1-Connector-1",
+      "status": "HEALTHY",
+      "version": "24.1.1"
+    },
+    {
+      "name": "DC1-Connector-2",
+      "status": "HEALTHY",
+      "version": "24.1.1"
+    },
+    {
+      "name": "DC2-Connector-1",
+      "status": "DISCONNECTED",
+      "version": "23.2.0"
+    },
+    {
+      "name": "AWS-Connector-1",
+      "status": "HEALTHY",
+      "version": "24.1.1"
+    },
+    {
+      "name": "Legacy-Connector",
+      "status": "WARNING",
+      "version": "22.4.0"
+    }
+  ]
+}

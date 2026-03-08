@@ -1,0 +1,83 @@
+{
+  "rules": [
+    {
+      "name": "Allow-DNS",
+      "action": "ALLOW",
+      "networkServices": [
+        "DNS"
+      ],
+      "destPorts": "53",
+      "state": "ENABLED",
+      "enableLogging": true
+    },
+    {
+      "name": "Allow-ICMP",
+      "action": "ALLOW",
+      "networkServices": [
+        "ICMP"
+      ],
+      "state": "ENABLED",
+      "enableLogging": false
+    },
+    {
+      "name": "Block-P2P",
+      "action": "BLOCK",
+      "networkServices": [
+        "P2P"
+      ],
+      "state": "ENABLED",
+      "enableLogging": true
+    },
+    {
+      "name": "Disabled-Legacy",
+      "action": "ALLOW",
+      "networkServices": [
+        "FTP"
+      ],
+      "state": "DISABLED",
+      "enableLogging": false
+    },
+    {
+      "name": "Disabled-Old",
+      "action": "ALLOW",
+      "networkServices": [
+        "Telnet"
+      ],
+      "state": "DISABLED",
+      "enableLogging": false
+    },
+    {
+      "name": "Disabled-Test1",
+      "action": "ALLOW",
+      "state": "DISABLED",
+      "enableLogging": false
+    },
+    {
+      "name": "Disabled-Test2",
+      "action": "ALLOW",
+      "state": "DISABLED",
+      "enableLogging": false
+    },
+    {
+      "name": "Disabled-Test3",
+      "action": "ALLOW",
+      "state": "DISABLED",
+      "enableLogging": false
+    },
+    {
+      "name": "Disabled-Test4",
+      "action": "ALLOW",
+      "state": "DISABLED",
+      "enableLogging": false
+    },
+    {
+      "name": "Default-Allow-All",
+      "action": "ALLOW",
+      "networkServices": [
+        "ANY"
+      ],
+      "state": "ENABLED",
+      "enableLogging": true
+    }
+  ]
+}

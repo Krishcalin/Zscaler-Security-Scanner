@@ -1,0 +1,7 @@
+{
+  "safeSearchEnabled": false,
+  "surrogateIp": {
+    "enabled": true,
+    "idleTimeout": 120
+  }
+}

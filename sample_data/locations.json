@@ -1,0 +1,19 @@
+{
+  "locations": [
+    {
+      "name": "HQ-Office",
+      "authRequired": true,
+      "sslInspection": true
+    },
+    {
+      "name": "Branch-London",
+      "authRequired": false,
+      "sslInspection": true
+    },
+    {
+      "name": "Guest-WiFi",
+      "authRequired": false,
+      "sslInspection": false
+    }
+  ]
+}

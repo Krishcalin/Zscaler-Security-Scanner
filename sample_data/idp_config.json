@@ -1,0 +1,9 @@
+{
+  "enabled": true,
+  "type": "SAML",
+  "idpName": "Okta",
+  "scimEnabled": false,
+  "signedSamlRequest": true,
+  "encryptedSamlAssertion": false,
+  "allowIdpInitiated": true
+}

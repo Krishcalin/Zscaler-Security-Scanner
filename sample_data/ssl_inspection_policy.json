@@ -1,0 +1,66 @@
+{
+  "rules": [
+    {
+      "name": "Inspect-All",
+      "action": "INSPECT",
+      "urlCategories": [
+        "ANY"
+      ],
+      "state": "ENABLED"
+    },
+    {
+      "name": "Bypass-Banking",
+      "action": "BYPASS",
+      "urlCategories": [
+        "Finance",
+        "Banking"
+      ],
+      "state": "ENABLED"
+    },
+    {
+      "name": "Bypass-Health",
+      "action": "BYPASS",
+      "urlCategories": [
+        "Health"
+      ],
+      "state": "ENABLED"
+    },
+    {
+      "name": "Bypass-Personal",
+      "action": "BYPASS",
+      "urlCategories": [
+        "Personal Sites",
+        "Streaming"
+      ],
+      "state": "ENABLED"
+    },
+    {
+      "name": "Bypass-Social",
+      "action": "BYPASS",
+      "urlCategories": [
+        "Social Media"
+      ],
+      "state": "ENABLED"
+    },
+    {
+      "name": "Bypass-Webmail",
+      "action": "BYPASS",
+      "urlCategories": [
+        "Webmail"
+      ],
+      "state": "ENABLED"
+    },
+    {
+      "name": "Bypass-Misc",
+      "action": "BYPASS",
+      "urlCategories": [
+        "Shopping",
+        "Travel"
+      ],
+      "state": "ENABLED"
+    }
+  ],
+  "certPinningDetection": false,
+  "minTlsVersion": "tls1.1",
+  "clientConnectorSslEnabled": false
+}

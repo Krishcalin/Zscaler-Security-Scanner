@@ -1,0 +1,51 @@
+{
+  "rules": [
+    {
+      "name": "Allow-All-Apps",
+      "action": "ALLOW",
+      "appSegmentGroups": "any",
+      "conditions": "any",
+      "postureProfile": "",
+      "userRiskScoreLevel": "",
+      "state": "ENABLED"
+    },
+    {
+      "name": "Allow-Engineering",
+      "action": "ALLOW",
+      "appSegmentGroups": [
+        "Engineering-Apps"
+      ],
+      "conditions": {
+        "scimGroups": [
+          "Engineering"
+        ]
+      },
+      "postureProfile": "",
+      "userRiskScoreLevel": "",
+      "state": "ENABLED"
+    },
+    {
+      "name": "Allow-HR",
+      "action": "ALLOW",
+      "appSegmentGroups": [
+        "HR-Apps"
+      ],
+      "conditions": {
+        "scimGroups": [
+          "HR"
+        ]
+      },
+      "postureProfile": "basic-posture",
+      "userRiskScoreLevel": "",
+      "state": "ENABLED"
+    },
+    {
+      "name": "Default-Allow",
+      "action": "ALLOW",
+      "appSegmentGroups": "any",
+      "conditions": "any",
+      "state": "ENABLED"
+    }
+  ],
+  "reauthTimeout": 86400
+}

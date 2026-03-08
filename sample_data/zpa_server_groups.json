@@ -1,0 +1,13 @@
+{
+  "groups": [
+    {
+      "name": "DC1-Servers"
+    },
+    {
+      "name": "DC2-Servers"
+    },
+    {
+      "name": "AWS-Servers"
+    }
+  ]
+}

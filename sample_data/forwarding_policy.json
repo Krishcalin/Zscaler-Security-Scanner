@@ -1,0 +1,19 @@
+{
+  "rules": [
+    {
+      "name": "Direct-VoIP",
+      "action": "DIRECT",
+      "criteria": "VoIP traffic"
+    },
+    {
+      "name": "Direct-Backup",
+      "action": "DIRECT",
+      "criteria": "Backup servers"
+    },
+    {
+      "name": "Forward-Default",
+      "action": "FORWARD_ZIA",
+      "criteria": "All other"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 230">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#04080f"/><stop offset="100%" style="stop-color:#051525"/>
+    </linearGradient>
+    <linearGradient id="topBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0ea5e9"/><stop offset="50%" style="stop-color:#38bdf8"/><stop offset="100%" style="stop-color:#0284c7"/>
+    </linearGradient>
+    <linearGradient id="sg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9"/><stop offset="100%" style="stop-color:#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="sf" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:0.1"/><stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:0.01"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:0.06"/><stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="gl"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="clip"><rect width="900" height="230" rx="14"/></clipPath>
+  </defs>
+  <rect width="900" height="230" rx="14" fill="url(#bg)"/>
+  <rect width="900" height="3" rx="1.5" fill="url(#topBar)" clip-path="url(#clip)"/>
+  <ellipse cx="100" cy="115" rx="110" ry="100" fill="url(#glow)"/>
+  <g transform="translate(42, 30)" filter="url(#gl)">
+    <path d="M56 8 L100 26 L100 82 C100 114 80 134 56 144 C32 134 12 114 12 82 L12 26 Z" fill="url(#sf)" stroke="url(#sg)" stroke-width="2"/>
+    <circle cx="56" cy="60" r="18" fill="none" stroke="#0ea5e9" stroke-width="1.5" opacity="0.6"/>
+    <circle cx="56" cy="60" r="10" fill="none" stroke="#38bdf8" stroke-width="1" opacity="0.4"/>
+    <circle cx="56" cy="60" r="3" fill="#0ea5e9" opacity="0.8"/>
+    <line x1="56" y1="42" x2="56" y2="35" stroke="#0ea5e9" stroke-width="1" opacity="0.5"/>
+    <line x1="56" y1="78" x2="56" y2="85" stroke="#0ea5e9" stroke-width="1" opacity="0.5"/>
+    <line x1="38" y1="60" x2="32" y2="60" stroke="#0ea5e9" stroke-width="1" opacity="0.5"/>
+    <line x1="74" y1="60" x2="80" y2="60" stroke="#0ea5e9" stroke-width="1" opacity="0.5"/>
+    <text x="56" y="105" font-family="monospace" font-size="7" fill="#38bdf8" text-anchor="middle" opacity="0.6">ZERO TRUST</text>
+    <path d="M44 115 L50 121 L68 103" fill="none" stroke="#0ea5e9" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  </g>
+  <text x="220" y="52" font-family="'Courier New', monospace" font-size="10" fill="#0ea5e9" letter-spacing="4.5" opacity="0.6">ZSCALER · SASE · DSPM</text>
+  <text x="220" y="92" font-family="'Segoe UI', 'Helvetica Neue', sans-serif" font-size="34" font-weight="700" fill="#f1f5f9">Zscaler Security Scanner</text>
+  <text x="220" y="126" font-family="'Courier New', monospace" font-size="20" fill="#38bdf8" font-weight="700" letter-spacing="1.5">ZIA + ZPA + DSPM</text>
+  <line x1="220" y1="140" x2="490" y2="140" stroke="#1e293b" stroke-width="1"/>
+  <text x="220" y="160" font-family="monospace" font-size="10" fill="#94a3b8">URL Filter</text>
+  <circle cx="279" cy="157" r="1.2" fill="#334155"/>
+  <text x="285" y="160" font-family="monospace" font-size="10" fill="#94a3b8">SSL</text>
+  <circle cx="307" cy="157" r="1.2" fill="#334155"/>
+  <text x="313" y="160" font-family="monospace" font-size="10" fill="#94a3b8">Firewall</text>
+  <circle cx="366" cy="157" r="1.2" fill="#334155"/>
+  <text x="372" y="160" font-family="monospace" font-size="10" fill="#94a3b8">DLP</text>
+  <circle cx="396" cy="157" r="1.2" fill="#334155"/>
+  <text x="402" y="160" font-family="monospace" font-size="10" fill="#94a3b8">ZTNA</text>
+  <circle cx="432" cy="157" r="1.2" fill="#334155"/>
+  <text x="438" y="160" font-family="monospace" font-size="10" fill="#94a3b8">DSPM</text>
+  <g transform="translate(220, 174)">
+    <rect x="0" y="0" width="90" height="22" rx="5" fill="rgba(14,165,233,0.06)" stroke="#0ea5e9" stroke-width="0.6"/>
+    <text x="45" y="15" font-family="monospace" font-size="8.5" fill="#0ea5e9" text-anchor="middle">FedRAMP High</text>
+    <rect x="98" y="0" width="72" height="22" rx="5" fill="rgba(56,189,248,0.06)" stroke="#38bdf8" stroke-width="0.6"/>
+    <text x="134" y="15" font-family="monospace" font-size="8.5" fill="#38bdf8" text-anchor="middle">SOC 2</text>
+    <rect x="178" y="0" width="80" height="22" rx="5" fill="rgba(2,132,199,0.06)" stroke="#0284c7" stroke-width="0.6"/>
+    <text x="218" y="15" font-family="monospace" font-size="8.5" fill="#0284c7" text-anchor="middle">ISO 27001</text>
+    <rect x="266" y="0" width="66" height="22" rx="5" fill="rgba(14,165,233,0.06)" stroke="#0ea5e9" stroke-width="0.6"/>
+    <text x="299" y="15" font-family="monospace" font-size="8.5" fill="#0ea5e9" text-anchor="middle">NIST</text>
+  </g>
+  <g transform="translate(770, 50)">
+    <rect x="0" y="0" width="80" height="30" rx="15" fill="rgba(14,165,233,0.07)" stroke="#0ea5e9" stroke-width="0.8"/>
+    <text x="40" y="20" font-family="monospace" font-size="14" fill="#0ea5e9" text-anchor="middle" font-weight="700">v1.0</text>
+  </g>
+  <g transform="translate(740, 100)">
+    <rect x="0" y="0" width="120" height="30" rx="6" fill="rgba(15,23,42,0.6)" stroke="#1e293b" stroke-width="0.6"/>
+    <text x="12" y="20" font-family="monospace" font-size="18" fill="#0ea5e9" font-weight="700">12</text>
+    <text x="38" y="20" font-family="'Segoe UI', sans-serif" font-size="10" fill="#64748b">modules</text>
+  </g>
+  <g transform="translate(740, 138)">
+    <rect x="0" y="0" width="120" height="30" rx="6" fill="rgba(15,23,42,0.6)" stroke="#1e293b" stroke-width="0.6"/>
+    <text x="12" y="20" font-family="monospace" font-size="18" fill="#38bdf8" font-weight="700">62+</text>
+    <text x="52" y="20" font-family="'Segoe UI', sans-serif" font-size="10" fill="#64748b">checks</text>
+  </g>
+  <g transform="translate(740, 176)">
+    <rect x="0" y="0" width="120" height="30" rx="6" fill="rgba(15,23,42,0.6)" stroke="#1e293b" stroke-width="0.6"/>
+    <text x="12" y="20" font-family="monospace" font-size="14" fill="#0284c7" font-weight="700">0</text>
+    <text x="28" y="20" font-family="'Segoe UI', sans-serif" font-size="10" fill="#64748b">dependencies</text>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+{
+  "dictionaries": [
+    {
+      "name": "SSN",
+      "type": "predefined"
+    },
+    {
+      "name": "Credit Card Numbers",
+      "type": "predefined"
+    }
+  ]
+}

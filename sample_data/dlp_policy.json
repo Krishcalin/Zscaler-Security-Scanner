@@ -1,0 +1,24 @@
+{
+  "rules": [
+    {
+      "name": "Monitor-SSN",
+      "action": "AUDIT_ONLY",
+      "dictionaries": [
+        "SSN"
+      ],
+      "state": "ENABLED"
+    },
+    {
+      "name": "Monitor-CC",
+      "action": "AUDIT_ONLY",
+      "dictionaries": [
+        "Credit Card"
+      ],
+      "state": "ENABLED"
+    }
+  ],
+  "exactDataMatch": {
+    "enabled": false
+  },
+  "icapEnabled": false
+}

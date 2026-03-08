@@ -1,0 +1,39 @@
+{
+  "rules": [
+    {
+      "name": "Block-Malware",
+      "action": "BLOCK",
+      "urlCategories": [
+        "Malware",
+        "Phishing",
+        "Command & Control"
+      ],
+      "state": "ENABLED"
+    },
+    {
+      "name": "Caution-Uncategorized",
+      "action": "ALLOW",
+      "urlCategories": [
+        "Uncategorized"
+      ],
+      "state": "ENABLED"
+    },
+    {
+      "name": "Allow-Newly-Registered",
+      "action": "ALLOW",
+      "urlCategories": [
+        "Newly Registered Domains"
+      ],
+      "state": "ENABLED"
+    },
+    {
+      "name": "Default-Allow",
+      "action": "ALLOW",
+      "urlCategories": [
+        "ANY"
+      ],
+      "state": "ENABLED"
+    }
+  ],
+  "cautionEnabled": false
+}

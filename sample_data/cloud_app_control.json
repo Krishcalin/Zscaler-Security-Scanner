@@ -1,0 +1,26 @@
+{
+  "rules": [
+    {
+      "name": "Allow-O365",
+      "action": "ALLOW",
+      "applications": [
+        "Microsoft 365"
+      ],
+      "state": "ENABLED"
+    },
+    {
+      "name": "Allow-Risky",
+      "action": "ALLOW",
+      "applications": [
+        "BitTorrent",
+        "Mega",
+        "TeamViewer"
+      ],
+      "state": "ENABLED"
+    }
+  ],
+  "shadowItDiscovery": false,
+  "tenantRestrictions": {
+    "enabled": false
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "enabled": false,
+  "exposureMonitoring": {
+    "enabled": false
+  },
+  "scanDataAtRest": false
+}

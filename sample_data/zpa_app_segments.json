@@ -1,0 +1,61 @@
+{
+  "segments": [
+    {
+      "name": "Internal-Wildcard",
+      "domainNames": [
+        "*.internal.corp.com",
+        "*.dev.corp.com"
+      ],
+      "serverGroups": [
+        "DC1-Servers"
+      ],
+      "bypassType": "NEVER"
+    },
+    {
+      "name": "Legacy-Apps",
+      "domainNames": [
+        "app1.corp.com",
+        "app2.corp.com",
+        "app3.corp.com",
+        "app4.corp.com",
+        "app5.corp.com",
+        "app6.corp.com",
+        "app7.corp.com",
+        "app8.corp.com",
+        "app9.corp.com",
+        "app10.corp.com",
+        "app11.corp.com",
+        "app12.corp.com",
+        "app13.corp.com",
+        "app14.corp.com",
+        "app15.corp.com",
+        "app16.corp.com",
+        "app17.corp.com",
+        "app18.corp.com",
+        "app19.corp.com",
+        "app20.corp.com",
+        "app21.corp.com"
+      ],
+      "serverGroups": [
+        "DC1-Servers"
+      ],
+      "bypassType": "NEVER"
+    },
+    {
+      "name": "Bypass-Segment",
+      "domainNames": [
+        "printer.corp.com"
+      ],
+      "serverGroups": [],
+      "bypassType": "ON_NET"
+    },
+    {
+      "name": "Orphaned-Segment",
+      "domainNames": [
+        "old.corp.com"
+      ],
+      "serverGroups": [],
+      "bypassType": "NEVER"
+    }
+  ]
+}
